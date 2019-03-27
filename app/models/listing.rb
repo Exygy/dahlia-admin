@@ -102,7 +102,7 @@ class Listing < ActiveRecord::Base
 
     # Special field conversion cases for listings:
     # Remove any fields that are objects
-    object_fields.each do |field_map|
+    array_fields.each do |field_map|
       domain_fields.delete(field_map[:domain])
     end
 
