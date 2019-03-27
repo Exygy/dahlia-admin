@@ -62,8 +62,6 @@ group :development do
   gem 'rails_best_practices'
   gem 'rails_layout'
   gem 'better_errors'
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
   gem 'rubocop', require: false
 end
 

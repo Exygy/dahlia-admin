@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# sample_listing.json is a copy of the listing API endpoint response
+# returned by Salesforce in the original DAHLIA. we're using it as a
+# quick way to get some test listing data while SMC/SJ DAHLIA is in
+# early development.
+sample_listing_file = File.read 'lib/sample_data/sample_listing.json'
+sample_listing_salesforce_fields = JSON.parse(sample_listing_file)
+listing = Listing.new
+listing.add_fields(sample_listing_salesforce_fields, :salesforce)
+Listing.create listing.to_domain.to_hash
