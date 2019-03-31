@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.7'
+ruby '2.5.3'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -42,6 +42,9 @@ group :development, :test do
   gem 'dotenv-rails', '~> 2.2'
   gem 'pry-rails'
   gem 'binding_of_caller'
+  # JW: Had to update this to 0.8.0+ upon Ruby 2.5.3 upgrade, explained:
+  # https://stackoverflow.com/questions/48123534/spring-stopping-rails-console-from-running#comment95628093_48123939
+
   gem 'rspec-rails', '~> 3.7'
   gem 'webmock'
   gem "pry-byebug", '~> 3.4.0'
