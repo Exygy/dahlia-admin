@@ -73,8 +73,8 @@ gem 'rails_12factor', group: :production
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Added at 2017-10-22 23:46:25 -0700 by dkaplan:
-gem "devise", "~> 4.3"
+# Updated at 2019-03-31 12:16:15 -0700 by jwhite:
+gem "devise", "~> 4.6.2"
 
 # Added at 2017-10-22 23:48:56 -0700 by dkaplan:
 gem "omniauth-salesforce", "~> 1.0"
@@ -98,3 +98,6 @@ gem "webpacker-react", "~> 0.3.2"
 
 # Added at 2017-11-10 09:14:41 -0800 by dkaplan:
 gem "pg", "~> 0.21.0"
+
+# Added at 2019-04-01 09:09:44 -0700 by jwhite:
+gem "pundit"
