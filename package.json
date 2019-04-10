@@ -69,7 +69,7 @@
     "e2e": "jest --testPathPattern=.*e2e.* --runInBand",
     "test:all": "jest",
     "test:unit": "jest --testPathPattern=.*.test.js$ --coverage",
-    "test:e2e": "jest --testPathPattern=.*e2e.* --runInBand",
+    "test:e2e": "jest --testPathPattern=.*e2e.* --runInBand. --forceExit",
     "lint": "standard \"./**/*.js\" | snazzy",
     "lint:fix": "standard \"./**/*.js\" --fix | snazzy"
   },
