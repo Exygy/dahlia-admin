@@ -1,53 +1,3 @@
-import values from './values'
-
-const application = (uniqId, attributes = {}) => {
-  return {
-    'Preference_Order': '1',
-    'Application': '1',
-    'Application.Name': `Application Name ${uniqId}`,
-    'Preference_Lottery_Rank': '1',
-    'Application.First_Name': `some first name ${uniqId}`,
-    'Application.Last_Name': `some last name ${uniqId}`,
-    'Application.Phone': 'some phone',
-    'Application.Email': `some email ${uniqId}`,
-    'LastModifiedDate:': '14 feb 19',
-    'Application.Processing_Status': 'processing',
-    'Application.Residence_Address': `1316 BURNETT ${uniqId}`,
-    'Listing_Preference_ID.Record_Type_For_App_Preferences': 'CAP',
-    ...attributes
-  }
-}
-
-const applicant = (uniqId) => {
-  return {
-    Id: uniqId,
-    Date_of_Birth: values.fixedISOdDate(),
-    'DOB': values.fixedISOdDate(),
-    Email: 'xxxx2',
-    First_Name: 'xxxx3',
-    Last_Name: 'lastName',
-    Middle_Name: 'middleName',
-    Street: 'address',
-    City: 'city',
-    State: 'state',
-    Zip_Code: 'zip',
-    Mailing_Street: 'mailingAddress',
-    Mailing_City: 'mailingCity',
-    Mailing_State: 'mailingState',
-    Mailing_Zip_Code: 'mailingZip',
-    Phone: 'phone',
-    Phone_Type: 'phoneType'
-  }
-}
-
-const applicationWithApplicant = (uniqId) => {
-  return application(uniqId, { Applicant: applicant(uniqId) })
-}
-
-const applicationWithListing = (uniqId) => {
-  return application(uniqId, { 'Listing': { 'Id': uniqId } })
-}
-
 const listing = (uniqId) => {
   return {
     'Id': uniqId,
@@ -226,33 +176,9 @@ const listingDetail = () => {
   }
 }
 
-const applicationFields = () => {
-  return {
-    Id: null,
-    'Listing.Name': {
-      label: 'Listing Name'
-    },
-    Rule_Name: null,
-    Total_Number_of_Duplicates: null
-  }
-}
-
-const applicationsList = () => {
-  return [
-    { Id: 'a0r0x000002BhjHAAS', 'Listing.Name': 'TEST Listing', Rule_Name: 'Residence Address', Total_Number_of_Duplicates: 1 },
-    { Id: 'a0r0x000002BhjHAAS', 'Listing.Name': 'TEST Listing', Rule_Name: 'Residence Address', Total_Number_of_Duplicates: 1 }
-  ]
-}
-
 export default {
   listing,
   listingFields,
   listingsList,
-  listingDetail,
-  application,
-  applicationWithListing,
-  applicationsList,
-  applicant,
-  applicationWithApplicant,
-  applicationFields
+  listingDetail
 }
