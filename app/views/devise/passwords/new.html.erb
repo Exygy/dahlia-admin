@@ -1,18 +1,24 @@
 <%= render 'login_layout' do %>
-  <h2>Forgot your password?</h2>
+  <%= render partial: 'login_header', locals: {title: 'Forgot Password'} %>
 
-  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-    <%= render "devise/shared/error_messages", resource: resource %>
+  <div class="dash-card-inner inset border-bottom">
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
 
-    <div class="field">
-      <%= f.label :email %>
-      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-    </div>
+      <div class="field">
+        <%= f.label :email, class: 'caps' %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
 
-    <div class="actions">
-      <%= f.submit "Send me reset password instructions", class: 'button' %>
-    </div>
-  <% end %>
+      <div class="actions text-center padding-top">
+        <%= f.submit "Send email", class: 'button primary' %>
+      </div>
 
-  <%= render "devise/shared/links" %>
+      <p class="t-small c-steel text-center padding-top no-margin">
+        <small class="form-note shift-up">
+          <a href="/users/sign_in">Cancel</a>
+        </small>
+      </p>
+    <% end %>
+  </div>
 <% end %>

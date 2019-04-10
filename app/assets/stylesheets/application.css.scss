@@ -73,3 +73,157 @@
 .tr-expand-content[aria-hidden='true'] {
   display: none;
 }
+
+
+.dash-section:before, .dash-section:after {
+  content: " ";
+  display: table
+}
+
+.dash-section:after {
+  clear: both
+}
+
+@media only screen and (min-width: 48.0625em) {
+  .dash-block {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 50%;
+      float: left
+  }
+}
+
+.dash-item {
+  background-color: #fff;
+  color: #333;
+  display: block;
+  padding: 2rem 1rem 1rem;
+  border-bottom: 1px solid #dedee0;
+  text-align: center
+}
+
+@media only screen and (min-width: 48.0625em) {
+  .dash-item {
+      border: 1px solid #dedee0;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      margin-bottom: 2rem
+  }
+}
+
+.dash-item p {
+  font-size: 0.875rem;
+  line-height: 1.375;
+  margin-bottom: 0
+}
+
+.dash-name {
+  font-size: 1.375rem;
+  line-height: 1.25
+}
+
+@media screen and (min-width: 48.0625em) {
+  .dash-name {
+      font-size: 1.625rem;
+      line-height: 1.25
+  }
+}
+
+.dash-card {
+  background-color: #fff;
+  margin-bottom: 0
+}
+
+@media only screen and (min-width: 48.0625em) {
+  .dash-card {
+      border: 1px solid #dedee0;
+      border-radius: 0.5rem
+  }
+}
+
+.dash-card-inner {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem
+}
+
+.dash-card-inner.expand {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+@media only screen and (min-width: 48.0625em) {
+  .dash-card-inner.inset {
+      padding-left: 4rem;
+      padding-right: 4rem;
+      margin-left: 1rem;
+      margin-right: 1rem
+  }
+}
+
+@media only screen and (min-width: 48.0625em) {
+  .dash-card-inner.full {
+      padding-left: 5rem;
+      padding-right: 5rem;
+      margin-left: 0;
+      margin-right: 0
+  }
+}
+
+.dash-card-inner p:last-of-type {
+  margin-bottom: 0
+}
+
+.dash-header {
+  border-bottom: 1px solid #dedee0;
+  padding: 1rem;
+  text-align: center
+}
+
+@media only screen and (min-width: 48.0625em) {
+  .dash-header {
+      padding: 2rem
+  }
+}
+
+.dash-header.expand {
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem
+}
+
+.dash-header p:last-of-type {
+  margin-bottom: 0
+}
+
+.dash-title {
+  font-size: 1.375rem;
+  line-height: 1.25
+}
+
+@media screen and (min-width: 48.0625em) {
+  .dash-title {
+      font-size: 1.625rem;
+      line-height: 1.25
+  }
+}
+
+.dash-summary {
+  font-size: 0.875rem;
+  line-height: 1.375;
+  color: #767676
+}
+
+@media only screen and (min-width: 48.0625em) {
+  .dash-summary {
+      padding-left: 2rem;
+      padding-right: 2rem
+  }
+}
+
+@media only screen and (min-width: 48.0625em) {
+  .dash-footer {
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem
+  }
+}
