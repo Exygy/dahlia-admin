@@ -1,9 +1,12 @@
 <%= render 'login_layout' do %>
   <%= render partial: 'login_header', locals: {title: 'Forgot Password'} %>
 
+  <% if resource.errors.any? %>
+    <%= render partial: 'login_alert', locals: {message: "Email address not found in our system"} %>
+  <% end %>
+
   <div class="dash-card-inner inset border-bottom">
     <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-      <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="field">
         <%= f.label :email, class: 'caps' %>

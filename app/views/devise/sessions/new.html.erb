@@ -2,11 +2,7 @@
   <%= render partial: 'login_header', locals: {title: 'Sign in'} %>
 
   <% if flash[:alert] %>
-    <div class="alert-box alert">
-      <span class="alert-icon"><span class="ui-icon ui-static ui-medium"><svg><use xlink:href="#i-warning" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span></span>
-      <button aria-label="Close Alert Box" class="button-link close" onclick="document.querySelector('.dash-card .alert-box').remove()">×</button>
-      <p class="alert-body"><%= flash[:alert] %></p>
-    </div>
+    <%= render partial: 'login_alert', locals: {message: flash[:alert]} %>
   <% end %>
 
   <div class="dash-card-inner inset border-bottom">
