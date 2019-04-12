@@ -49,8 +49,10 @@ describe('Sign in page', () => {
     await page.type('#user_email', 'nope@testing.test')
     await page.type('#user_password', 'badpassword')
 
-    await page.click('.actions input[type=submit]')
-    await page.waitForNavigation()
+    await Promise.all([
+      page.waitForNavigation(),
+      page.click('.actions input[type=submit]')
+    ])
 
     const alertHtml = await page.$eval('.alert-body', e => e.innerHTML)
     expect(alertHtml).toBe('Invalid Email or password.')
@@ -70,8 +72,10 @@ describe('Sign in page', () => {
     await page.type('#user_email', TEST_USER_EMAIL)
     await page.type('#user_password', TEST_USER_PASSWORD)
 
-    await page.click('.actions input[type=submit]')
-    await page.waitForNavigation()
+    await Promise.all([
+      page.waitForNavigation(),
+      page.click('.actions input[type=submit]')
+    ])
 
     const alertHtml = await page.$eval('.alert-box div', e => e.innerHTML)
     expect(alertHtml).toBe('Signed in successfully.')
