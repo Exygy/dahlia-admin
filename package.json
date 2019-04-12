@@ -70,7 +70,7 @@
     "test:all": "yarn run test:seed; jest",
     "test:unit": "yarn run test:seed; jest --testPathPattern=.*.test.js$ --coverage",
     "test:e2e": "yarn run test:seed; jest --testPathPattern=.*e2e.* --runInBand. --forceExit",
-    "test:seed": "rails e2e_seed_data:install",
+    "test:seed": "bundle exec rails e2e_seed_data:install",
     "lint": "standard \"./**/*.js\" | snazzy",
     "lint:fix": "standard \"./**/*.js\" --fix | snazzy"
   },
