@@ -1,4 +1,5 @@
-.alert-box.alert
+- alert_class = flash[:notice] ? 'success' : 'alert'
+.alert-box *{class: alert_class}
   span.alert-icon
     span.ui-icon.ui-static.ui-medium
       svg
