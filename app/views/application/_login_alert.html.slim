@@ -1,0 +1,8 @@
+- alert_class = flash[:notice] ? 'success' : 'alert'
+.alert-box *{class: alert_class}
+  span.alert-icon
+    span.ui-icon.ui-static.ui-medium
+      svg
+        use xlink:href="#i-warning" xmlns:xlink="http://www.w3.org/1999/xlink"
+  button.button-link.close aria-label="Close Alert Box" onclick="document.querySelector('.dash-card .alert-box').remove()" ×
+  p.alert-body #{message}

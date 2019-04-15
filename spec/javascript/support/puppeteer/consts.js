@@ -1,3 +1,7 @@
+// Seeded test user login
+export const TEST_USER_EMAIL = process.env.E2E_TEST_USER_EMAIL || 'test@domain.com'
+export const TEST_USER_PASSWORD = process.env.E2E_TEST_USER_PASSWORD || 'dc29b69cb66321f'
+
 // Default to Automated Test Listing on Full
 export const NON_LEASE_UP_LISTING_ID = process.env.E2E_NON_LEASE_UP_LISTING_ID || 'a0W0P00000F8YG4UAN'
 

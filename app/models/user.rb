@@ -1,10 +1,17 @@
 # frozen_string_literal: true
 
-# User ouath class functions
+# User class functions
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable
-  devise :omniauthable, :trackable
+  devise  :omniauthable,
+          :trackable,
+          :database_authenticatable,
+          :registerable,
+          :recoverable
+
+  enum role: [:admin]
+  after_initialize :set_default_role, if: :new_record?
 
   def self.from_omniauth(auth)
     user = User.where(provider: auth.provider, uid: auth.uid, email: auth.extra.username).first ||
@@ -23,5 +30,9 @@ class User < ApplicationRecord
     user.oauth_token = auth.credentials.token
     user.save
     user
+  end
+
+  def set_default_role
+    self.role ||= :admin
   end
 end

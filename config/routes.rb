@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { omniauth_callbacks: 'callbacks' }
   as :user do
     root to: 'pages#home'
-    delete '/users/sign_out' => 'overrides/sessions#destroy'
   end
 
   # Salesforce resources

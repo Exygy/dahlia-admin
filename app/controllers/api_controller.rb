@@ -2,6 +2,8 @@
 
 # Root controller from which all our API controllers inherit.
 class ApiController < ActionController::API
+  include Pundit
+
   respond_to :json
 
   rescue_from Faraday::ClientError do |e|
