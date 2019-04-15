@@ -69,7 +69,7 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = {
     protocol: 'https',
-    host: ENV['APP_DOMAIN'] || 'dahlia-admin.herokuapp.com'
+    host: ENV['APP_DOMAIN'] || 'dahlia-admin.herokuapp.com',
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
