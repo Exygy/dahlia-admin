@@ -14,7 +14,16 @@ import ListingFormSectionsFees from './form/Fees'
 
 const onSubmit = async values => {
   axiosInit(axios)
-  const request = await axios.put(appPaths.toListing(values.id), {listing: values})
+
+  let request = null
+  if (values.id === null) {
+    // Create a new listing
+    request = await axios.post(appPaths.toListing(''), {listing: values})
+  } else {
+    // Update  listing
+    request = await axios.put(appPaths.toListing(values.id), {listing: values})
+  }
+
   if (request.status === 200) {
     window.Turbolinks.visit(appPaths.toListing(''))
   } else {
@@ -29,7 +38,7 @@ const ListingForm = ({ listing }) => {
   return (
     <React.Fragment>
       <PageHeader
-        title='Edit Listing' />
+        title={listing.id === null ? 'New Listing' : 'Edit Listing'} />
       <div style={{height: '25px'}} />
       <Form
         onSubmit={onSubmit}

@@ -12,6 +12,17 @@ class ListingsController < ApplicationController
     @listing = Listing.find(params[:id]).to_salesforce_from_db
   end
 
+  def new
+    @listing = Listing.new
+  end
+
+  def create
+    @listing = Listing.new(listing_params)
+    @listing.save
+
+    render json: { id: @listing.id }
+  end
+
   def edit
     @listing = Listing.find(params[:id])
   end
