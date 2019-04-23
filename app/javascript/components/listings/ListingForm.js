@@ -21,7 +21,7 @@ const onSubmit = async values => {
   } else {
     response = await apiService.updateListing(values)
   }
-  console.log(response)
+
   if (response) {
     window.Turbolinks.visit(appPaths.toListing(response.id))
   } else {
