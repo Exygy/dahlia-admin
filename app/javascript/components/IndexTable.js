@@ -135,11 +135,16 @@ class IndexTable extends React.Component {
         SubComponent={row => {
           let linkTags = []
           let i = 0
+          // TODO: this seems like something that needs to be refactored…
+          // I'm not sure why a generic table component has specific
+          // link data set up this way. -JW
           each(links, (link) => {
             let href = ''
             const originalId = row.original.Id || row.original.id
             if (link === 'View Listing') {
               href = `/listings/${originalId}`
+            } else if (link === 'Edit Listing') {
+              href = `/listings/${originalId}/edit`
             } else if (link === 'Add Application' && row.original.Lottery_Status !== 'Lottery Complete') {
               href = `/listings/${originalId}/applications/new`
             } else if (link === 'View Application') {

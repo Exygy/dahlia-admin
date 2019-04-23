@@ -40,7 +40,7 @@ const ListingsPageTable = ({ page, listings, fields }) => {
       page={page}
       results={listings}
       fields={fields}
-      links={['View Listing', 'Add Application', 'Lease Ups']} />
+      links={['View Listing', 'Edit Listing', 'Add Application', 'Lease Ups']} />
   )
 }
 
