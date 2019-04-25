@@ -1,3 +1,8 @@
+PATH
+  remote: /Users/jwhite/RailsApps/dahlia_data_models
+  specs:
+    dahlia_data_models (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -339,6 +344,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  dahlia_data_models!
   devise (~> 4.6.2)
   dotenv-rails (~> 2.2)
   facets

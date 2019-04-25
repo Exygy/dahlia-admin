@@ -101,3 +101,6 @@ gem "pg", "~> 0.21.0"
 
 # Added at 2019-04-01 09:09:44 -0700 by jwhite:
 gem "pundit"
+
+# Added at 2019-04-23 11:05:00 -0700 by jwhite:
+gem "dahlia_data_models", path: '/Users/jwhite/RailsApps/dahlia_data_models'
