@@ -1,5 +1,6 @@
-PATH
-  remote: /Users/jwhite/RailsApps/dahlia_data_models
+GIT
+  remote: https://github.com/Exygy/dahlia_data_models.git
+  revision: 4a041078fc0d6bb621ea7a47f1cbd8804f73bfc7
   specs:
     dahlia_data_models (0.1.0)
 
