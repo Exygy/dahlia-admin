@@ -1,50 +1,3 @@
-const listing = (uniqId) => {
-  return {
-    'Id': uniqId,
-    'Name': 'xxx2'
-  }
-}
-
-const listingFields = () => {
-  return {
-    'Id': null,
-    'Name': {
-      'label': 'Listing Name',
-      'minWidth': 225
-    },
-    'Application_Due_Date': {
-      'type': 'date'
-    },
-    'Lottery_Date': {
-      'type': 'date'
-    },
-    'Lottery_Results_Date': {
-      'type': 'date'
-    },
-    'Lottery_Status': null,
-    'nFlagged_Applications': {
-      'label': 'Flagged Applications'
-    },
-    'In_Lottery': {
-      'label': 'Applications In Lottery'
-    }
-  }
-}
-
-const listingsList = () => {
-  return [
-    {'Id': 'a0W0x0000005q5MEAQ', 'Name': 'Krissy New Listing 4/5', 'Application_Due_Date': '04/12/18', 'Lottery_Date': null, 'Lottery_Results_Date': null, 'Lottery_Status': 'Not Yet Run', 'nFlagged_Applications': 0, 'In_Lottery': 0},
-    {'Id': 'a0W0x000000FeCGEA0', 'Name': 'Krissy Test 411', 'Application_Due_Date': '06/28/18', 'Lottery_Date': null, 'Lottery_Results_Date': null, 'Lottery_Status': 'Not Yet Run', 'nFlagged_Applications': 1, 'In_Lottery': 4}, {'Id': 'a0W0x000000GHiFEAW', 'Name': 'Automated Test Listing Senior All (please do not modify)', 'Application_Due_Date': '01/01/21', 'Lottery_Date': '01/22/21', 'Lottery_Results_Date': '03/23/17', 'Lottery_Status': 'Not Yet Run', 'nFlagged_Applications': 0, 'In_Lottery': 0},
-    {'Id': 'a0W0x000000Fg6jEAC', 'Name': 'Krissy 4/13', 'Application_Due_Date': '05/04/18', 'Lottery_Date': null, 'Lottery_Results_Date': null, 'Lottery_Status': 'Not Yet Run', 'nFlagged_Applications': 0, 'In_Lottery': 1},
-    {'Id': 'a0W0x000000G5fTEAS', 'Name': 'test 2', 'Application_Due_Date': null, 'Lottery_Date': null, 'Lottery_Results_Date': null, 'Lottery_Status': 'Not Yet Run', 'nFlagged_Applications': 0, 'In_Lottery': 0}, {'Id': 'a0W0x000000G5fOEAS', 'Name': 'test', 'Application_Due_Date': null, 'Lottery_Date': null, 'Lottery_Results_Date': null, 'Lottery_Status': 'Not Yet Run', 'nFlagged_Applications': 0, 'In_Lottery': 0},
-    {'Id': 'a0W0P00000DZJSTUA5', 'Name': '2235 Third (Potrero Launch) Unit  W519', 'Application_Due_Date': '02/17/17', 'Lottery_Date': '02/28/17', 'Lottery_Results_Date': '03/02/17', 'Lottery_Status': 'Not Yet Run', 'nFlagged_Applications': 0, 'In_Lottery': 0},
-    {'Id': 'a0W0P00000DZJSdUAP', 'Name': '2235 Third (Potrero Launch) Unit E408', 'Application_Due_Date': '02/17/17', 'Lottery_Date': '02/28/17', 'Lottery_Results_Date': '03/02/17', 'Lottery_Status': 'Not Yet Run', 'nFlagged_Applications': 0, 'In_Lottery': 0},
-    {'Id': 'a0W0P00000DZKPdUAP', 'Name': '2660 Third (Abaca)', 'Application_Due_Date': '03/10/17', 'Lottery_Date': '03/31/17', 'Lottery_Results_Date': '04/07/17', 'Lottery_Status': 'Lottery Complete', 'nFlagged_Applications': 0, 'In_Lottery': 2907},
-    {'Id': 'a0W0P00000F7t4uUAB', 'Name': 'Merry Go Round Shared Housing', 'Application_Due_Date': '02/08/18', 'Lottery_Date': '02/28/18', 'Lottery_Results_Date': '03/01/18', 'Lottery_Status': 'Lottery Complete', 'nFlagged_Applications': 58, 'In_Lottery': 562},
-    {'Id': 'a0W0P00000F7wvrUAB', 'Name': 'Pierce Street Apartments', 'Application_Due_Date': '01/31/18', 'Lottery_Date': '02/20/18', 'Lottery_Results_Date': '02/20/18', 'Lottery_Status': 'Lottery Complete', 'nFlagged_Applications': 98, 'In_Lottery': 1306}
-  ]
-}
-
 const listingDetail = () => {
   return {
     'attributes': {
@@ -176,9 +129,169 @@ const listingDetail = () => {
   }
 }
 
+const listingFields = () => {
+  return {
+    'Id': null,
+    'Name': {
+      'label': 'Listing Name',
+      'minWidth': 225
+    },
+    'Application_Due_Date': {
+      'type': 'date'
+    },
+    'Lottery_Date': {
+      'type': 'date'
+    },
+    'Lottery_Results_Date': {
+      'type': 'date'
+    },
+    'Lottery_Status': null,
+    'nFlagged_Applications': {
+      'label': 'Flagged Applications'
+    },
+    'In_Lottery': {
+      'label': 'Applications In Lottery'
+    }
+  }
+}
+
+const listings = [
+  {
+    'id': 0,
+    'accepting_applications_at_leasing_agent': false,
+    'accepting_applications_by_po_box': true,
+    'accepting_online_applications': true,
+    'accessibility': 'Elevator to all floors',
+    'amenities': 'Laundry room, underground parking, courtyard, bike room',
+    'application_due_date': '2021-01-01T01:00:00.000Z',
+    'application_organization': '280 Fell-BMR',
+    'application_city': 'San Francisco',
+    'application_phone': '(415) 227-2256',
+    'application_postal_code': '94142',
+    'application_state': 'CA',
+    'application_street_address': 'P.O. Box 420847',
+    'blank_paper_application_can_be_picked_up': false,
+    'building_city': 'San Francisco',
+    'building_name': 'Automated Test Building',
+    'building_selection_criteria': 'https://us.awp.autotask.net/1/filelink/113bd-37ed41a1-53a7f01459-2',
+    'building_state': 'CA',
+    'building_street_address': '2601 Mission St',
+    'building_url': 'https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg',
+    'building_zip_code': null,
+    'costs_not_included': 'Tenants pay for gas, electricity.\r\n\r\nFor pet fees:  Cat is allowed with a $500 refundable deposit, $250 non-refundable cleaning fee and a pet addendum.  \r\n\r\nDogs are not allowed in the building.  \r\n\r\nOne parking space per unit available for $175 a month.',
+    'credit_rating': 'Provide a credit report with score from Equifax, Experian, or TransUnion dated within thirty (30) days of the application. \r\n\r\nAccounts that are not current or that are derogatory will negatively affect the overall scoring, which could result in the denial of the application or an additional deposit may be required. \r\n\r\nCollection accounts exceeding a combined amount of $1,000.00 (excluding student loans and medical debt) will negatively affect the overall scoring, which could result in the denial of the application or an additional deposit may be required. \r\n\r\nBankruptcy if not cleared will be an automatic denial of the rental application. \r\n\r\nNo Guarantors permitted.\r\n\r\nMitigating circumstances may be considered.',
+    'deposit_max': '2355.0',
+    'deposit_min': '2102.0',
+    'developer': 'TEST Property Manager',
+    'does_match': false,
+    'first_come_first_served': false,
+    'has_waitlist': true,
+    'image_url': 'https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg',
+    'in_lottery': true,
+    'last_modified_date': '2018-11-27T21:59:57.000Z',
+    'legal_disclaimers': '<span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'>All BMR renters must review and acknowledge the </span></span><a href=\'http://sf-moh.org/index.aspx?page=295\' target=\'_blank\'><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'><span style=\'color: rgb(0, 0, 255);\'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'> that governs this property upon the signing of a lease for a BMR unit. </span></span><br> <br><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'>Applicants should be informed that BMR rental units in some buildings may convert to ownership units in the future.  In the case of conversion, BMR renters will be afforded certain rights as explained in the </span></span><a href=\'http://sf-moh.org/index.aspx?page=295\' target=\'_blank\'><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'><span style=\'color: rgb(0, 0, 255);\'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'>. Applicants should inquire with the building contact person listed above to determine if the building has a minimum number of years that it must remain a rental building.  (Some buildings may have such restrictions based on government sources of financing for their building.) Most buildings may have no restrictions on conversion at all. </span></span><br> <br><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'>It is also important to note that units governed by the Inclusionary Housing Program are NOT governed by the San Francisco Rent Ordinance (also known as “rent control”). Among other rules, rents may increase beyond increases allowed under “rent control.”  Please see the </span></span><span style=\'font-size: 12pt;\'><span style=\'font-family: times new roman,serif;\'><a href=\'http://sf-moh.org/index.aspx?page=295\' target=\'_blank\'><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'><span style=\'color: rgb(0, 0, 255);\'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a></span></span><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'> for more information. </span></span>',
+    'listing_id': 'a0W0P00000F8YG4UAN',
+    'lottery_city': 'San Francisco',
+    'lottery_date': '2017-03-22T18:00:00.000Z',
+    'lottery_results': false,
+    'lottery_results_date': '2017-03-23T00:00:00.000Z',
+    'lottery_status': 'Not Yet Run',
+    'lottery_street_address': '1 S. Van Ness Avenue 5th FL',
+    'lottery_venue': 'MOHCD',
+    'lottery_winners': 0,
+    'lottery_results_url': 'http://sfmohcd.org/sites/default/files/Documents/MOH/Lottery%20Results/280%20Fell%20Street%20Ranked%20List-%203-22-2017.pdf',
+    'marketing_url': 'A',
+    'maximum_waitlist_size': 888,
+    'name': 'Automated Test Listing (please do not modify)',
+    'neighborhood': 'Hayes Valley',
+    'general_application_total': 724,
+    'number_of_people_currently_on_waitlist': 10,
+    'pet_policy': 'Dogs are not allowed in the building.',
+    'priorities_descriptor': null,
+    'program_type': 'IH-RENTAL',
+    'project_id': '2012-021',
+    'required_documents': 'Lottery winners will be required to fill out a building application and provide a copy of your current credit report, 3 most recent paystubs, current tax returns and W-2, and 3 most recent bank statements.',
+    'reserved_community_maximum_age': 0,
+    'reserved_community_minimum_age': 0,
+    'reserved_descriptor': null,
+    'sase_required_for_lottery_ticket': true,
+    'smoking_policy': 'Non-smoking building',
+    'total_waitlist_openings': 878,
+    'units_available': 1,
+    'year_built': 0,
+    'created_at': '2019-04-29T15:01:58.076Z',
+    'updated_at': '2019-04-29T15:01:58.076Z'
+  },
+  {
+    'id': 2,
+    'accepting_applications_at_leasing_agent': false,
+    'accepting_applications_by_po_box': true,
+    'accepting_online_applications': true,
+    'accessibility': 'Elevator to all floors',
+    'amenities': 'Laundry room, underground parking, courtyard, bike room',
+    'application_due_date': '2021-01-01T01:00:00.000Z',
+    'application_organization': '280 Fell-BMR',
+    'application_city': 'San Mateo',
+    'application_phone': '(415) 227-2256',
+    'application_postal_code': '94142',
+    'application_state': 'CA',
+    'application_street_address': 'P.O. Box 420847',
+    'blank_paper_application_can_be_picked_up': false,
+    'building_city': 'San Mateo',
+    'building_name': 'Delaware Pacific',
+    'building_selection_criteria': 'https://us.awp.autotask.net/1/filelink/113bd-37ed41a1-53a7f01459-2',
+    'building_state': 'CA',
+    'building_street_address': '1990 S Delaware St',
+    'building_url': 'https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg',
+    'building_zip_code': '94403',
+    'costs_not_included': 'Tenants pay for gas, electricity.\n\nFor pet fees:  Cat is allowed with a $500 refundable deposit, $250 non-refundable cleaning fee and a pet addendum.  \n\nDogs are not allowed in the building.  \n\nOne parking space per unit available for $175 a month.',
+    'credit_rating': 'Provide a credit report with score from Equifax, Experian, or TransUnion dated within thirty (30) days of the application. \n\nAccounts that are not current or that are derogatory will negatively affect the overall scoring, which could result in the denial of the application or an additional deposit may be required. \n\nCollection accounts exceeding a combined amount of $1,000.00 (excluding student loans and medical debt) will negatively affect the overall scoring, which could result in the denial of the application or an additional deposit may be required. \n\nBankruptcy if not cleared will be an automatic denial of the rental application. \n\nNo Guarantors permitted.\n\nMitigating circumstances may be considered.',
+    'deposit_max': '2355.0',
+    'deposit_min': '2102.0',
+    'developer': 'Midpen',
+    'does_match': false,
+    'first_come_first_served': false,
+    'has_waitlist': true,
+    'image_url': 'https://midpenproperty.midpen-housing.org/servlet/servlet.FileDownload?retURL=%2Fapex%2FPropertySearch&file=00P46000000RliEEAS',
+    'in_lottery': false,
+    'last_modified_date': null,
+    'legal_disclaimers': '<span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'>All BMR renters must review and acknowledge the </span></span><a href=\'http://sf-moh.org/index.aspx?page=295\' target=\'_blank\'><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'><span style=\'color: rgb(0, 0, 255);\'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'> that governs this property upon the signing of a lease for a BMR unit. </span></span><br> <br><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'>Applicants should be informed that BMR rental units in some buildings may convert to ownership units in the future.  In the case of conversion, BMR renters will be afforded certain rights as explained in the </span></span><a href=\'http://sf-moh.org/index.aspx?page=295\' target=\'_blank\'><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'><span style=\'color: rgb(0, 0, 255);\'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'>. Applicants should inquire with the building contact person listed above to determine if the building has a minimum number of years that it must remain a rental building.  (Some buildings may have such restrictions based on government sources of financing for their building.) Most buildings may have no restrictions on conversion at all. </span></span><br> <br><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'>It is also important to note that units governed by the Inclusionary Housing Program are NOT governed by the San Francisco Rent Ordinance (also known as “rent control”). Among other rules, rents may increase beyond increases allowed under “rent control.”  Please see the </span></span><span style=\'font-size: 12pt;\'><span style=\'font-family: times new roman,serif;\'><a href=\'http://sf-moh.org/index.aspx?page=295\' target=\'_blank\'><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'><span style=\'color: rgb(0, 0, 255);\'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a></span></span><span style=\'font-size: 10pt;\'><span style=\'font-family: arial,sans-serif;\'> for more information. </span></span>',
+    'listing_id': '1',
+    'lottery_city': 'San Mateo',
+    'lottery_date': '2017-03-22T18:00:00.000Z',
+    'lottery_results': false,
+    'lottery_results_date': '2017-03-23T07:00:00.000Z',
+    'lottery_status': 'Not Yet Run',
+    'lottery_street_address': '1 S. Van Ness Avenue 5th FL',
+    'lottery_venue': 'MOHCD',
+    'lottery_winners': 0,
+    'lottery_results_url': 'http://sfmohcd.org/sites/default/files/Documents/MOH/Lottery%20Results/280%20Fell%20Street%20Ranked%20List-%203-22-2017.pdf',
+    'marketing_url': 'Automated-Test--Feb18',
+    'maximum_waitlist_size': 888,
+    'name': 'Delaware Pacific',
+    'neighborhood': 'Fiesta Gardens',
+    'general_application_total': 724,
+    'number_of_people_currently_on_waitlist': 10,
+    'pet_policy': 'Dogs are not allowed in the building.',
+    'priorities_descriptor': null,
+    'program_type': 'IH-RENTAL',
+    'project_id': '2012-021',
+    'required_documents': 'Lottery winners will be required to fill out a building application and provide a copy of your current credit report, 3 most recent paystubs, current tax returns and W-2, and 3 most recent bank statements.',
+    'reserved_community_maximum_age': 0,
+    'reserved_community_minimum_age': 0,
+    'reserved_descriptor': null,
+    'sase_required_for_lottery_ticket': true,
+    'smoking_policy': 'Non-smoking building',
+    'total_waitlist_openings': 878,
+    'units_available': 1,
+    'year_built': 0,
+    'created_at': '2019-04-22T16:26:39.580Z',
+    'updated_at': '2019-04-22T16:26:39.580Z'
+  }
+]
+
 export default {
-  listing,
+  listingDetail,
   listingFields,
-  listingsList,
-  listingDetail
+  listings
 }

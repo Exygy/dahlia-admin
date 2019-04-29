@@ -17,14 +17,82 @@ exports[`ListingPage individual fields Accessibility, Amenities, Fees fields 1`]
     >
       <div
         className="content-card"
-      />
+      >
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Accessibility
+          </h4>
+          <p>
+            Elevator to all floors
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Amenities
+          </h4>
+          <p>
+            Laundry room, underground parking, courtyard, bike room
+          </p>
+        </div>
+      </div>
     </li>
     <li
       className="content-item"
     >
       <div
         className="content-card"
-      />
+      >
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Deposit Min
+          </h4>
+          <p>
+            2102.0
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Deposit Max
+          </h4>
+          <p>
+            2355.0
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Costs Not Included
+          </h4>
+          <p>
+            Tenants pay for gas, electricity.
+
+For pet fees:  Cat is allowed with a $500 refundable deposit, $250 non-refundable cleaning fee and a pet addendum.  
+
+Dogs are not allowed in the building.  
+
+One parking space per unit available for $175 a month.
+          </p>
+        </div>
+      </div>
     </li>
   </ul>
 </div>
@@ -47,14 +115,53 @@ exports[`ListingPage individual fields Additional Eligibility Rules fields 1`] =
     >
       <div
         className="content-card"
-      />
+      >
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Building Selection Criteria
+          </h4>
+          <a
+            href="https://us.awp.autotask.net/1/filelink/113bd-37ed41a1-53a7f01459-2"
+            target="_blank"
+          >
+            https://us.awp.autotask.net/1/filelink/113bd-37ed41a1-53a7f01459-2
+          </a>
+        </div>
+      </div>
     </li>
     <li
       className="content-item"
     >
       <div
         className="content-card"
-      />
+      >
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Credit Rating
+          </h4>
+          <p>
+            Provide a credit report with score from Equifax, Experian, or TransUnion dated within thirty (30) days of the application. 
+
+Accounts that are not current or that are derogatory will negatively affect the overall scoring, which could result in the denial of the application or an additional deposit may be required. 
+
+Collection accounts exceeding a combined amount of $1,000.00 (excluding student loans and medical debt) will negatively affect the overall scoring, which could result in the denial of the application or an additional deposit may be required. 
+
+Bankruptcy if not cleared will be an automatic denial of the rental application. 
+
+No Guarantors permitted.
+
+Mitigating circumstances may be considered.
+          </p>
+        </div>
+      </div>
     </li>
   </ul>
 </div>
@@ -77,7 +184,32 @@ exports[`ListingPage individual fields Additional Information fields 1`] = `
     >
       <div
         className="content-card"
-      />
+      >
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Required Documents
+          </h4>
+          <p>
+            Lottery winners will be required to fill out a building application and provide a copy of your current credit report, 3 most recent paystubs, current tax returns and W-2, and 3 most recent bank statements.
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Smoking Policy
+          </h4>
+          <p>
+            Non-smoking building
+          </p>
+        </div>
+      </div>
     </li>
     <li
       className="content-item"
@@ -96,10 +228,22 @@ exports[`ListingPage individual fields Additional Information fields 1`] = `
           <p
             dangerouslySetInnerHTML={
               Object {
-                "__html": "some disclaimer",
+                "__html": "<span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>All BMR renters must review and acknowledge the </span></span><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'> that governs this property upon the signing of a lease for a BMR unit. </span></span><br> <br><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>Applicants should be informed that BMR rental units in some buildings may convert to ownership units in the future.  In the case of conversion, BMR renters will be afforded certain rights as explained in the </span></span><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>. Applicants should inquire with the building contact person listed above to determine if the building has a minimum number of years that it must remain a rental building.  (Some buildings may have such restrictions based on government sources of financing for their building.) Most buildings may have no restrictions on conversion at all. </span></span><br> <br><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>It is also important to note that units governed by the Inclusionary Housing Program are NOT governed by the San Francisco Rent Ordinance (also known as “rent control”). Among other rules, rents may increase beyond increases allowed under “rent control.”  Please see the </span></span><span style='font-size: 12pt;'><span style='font-family: times new roman,serif;'><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a></span></span><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'> for more information. </span></span>",
               }
             }
           />
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Pet Policy
+          </h4>
+          <p>
+            Dogs are not allowed in the building.
+          </p>
         </div>
       </div>
     </li>
@@ -124,7 +268,44 @@ exports[`ListingPage individual fields Application Information fields 1`] = `
     >
       <div
         className="content-card"
-      />
+      >
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Application Phone
+          </h4>
+          <p>
+            (415) 227-2256
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Application Organization
+          </h4>
+          <p>
+            280 Fell-BMR
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Application Street Address
+          </h4>
+          <p>
+            P.O. Box 420847
+          </p>
+        </div>
+      </div>
     </li>
     <li
       className="content-item"
@@ -138,10 +319,34 @@ exports[`ListingPage individual fields Application Information fields 1`] = `
           <h4
             className="t-sans t-small t-bold no-margin"
           >
+            Application City
+          </h4>
+          <p>
+            San Francisco
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
             Application State
           </h4>
           <p>
             CA
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Application Postal Code
+          </h4>
+          <p>
+            94142
           </p>
         </div>
       </div>
@@ -177,7 +382,7 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
             Building Name
           </h4>
           <p>
-            77 Bluxome
+            Automated Test Building
           </p>
         </div>
         <div
@@ -189,7 +394,7 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
             Building Street Address
           </h4>
           <p>
-            77 Bluxome Street
+            2601 Mission St
           </p>
         </div>
         <div
@@ -216,18 +421,6 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
             CA
           </p>
         </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Building Zip Code
-          </h4>
-          <p>
-            94107
-          </p>
-        </div>
       </div>
     </li>
     <li
@@ -245,7 +438,7 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
             Neighborhood
           </h4>
           <p>
-            South of Market
+            Hayes Valley
           </p>
         </div>
         <div
@@ -257,7 +450,7 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
             Developer
           </h4>
           <p>
-            Equity Residential
+            TEST Property Manager
           </p>
         </div>
         <div
@@ -269,23 +462,11 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
             Building URL
           </h4>
           <a
-            href="https://i.imgur.com/Jh8OHJY.jpg"
+            href="https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg"
             target="_blank"
           >
-            https://i.imgur.com/Jh8OHJY.jpg
+            https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg
           </a>
-        </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Year Built
-          </h4>
-          <p>
-            2008
-          </p>
         </div>
       </div>
     </li>
@@ -317,34 +498,10 @@ exports[`ListingPage individual fields Details fields 1`] = `
           <h4
             className="t-sans t-small t-bold no-margin"
           >
-            Owner
-          </h4>
-          <p>
-            Prod Vertiba
-          </p>
-        </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
             Name
           </h4>
           <p>
-            Test 5/30
-          </p>
-        </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Account
-          </h4>
-          <p>
-            Equity Residential
+            Automated Test Listing (please do not modify)
           </p>
         </div>
         <div
@@ -356,7 +513,7 @@ exports[`ListingPage individual fields Details fields 1`] = `
             Application Due Date
           </h4>
           <p>
-            05/31/2018
+            12/31/2020
           </p>
         </div>
       </div>
@@ -376,19 +533,7 @@ exports[`ListingPage individual fields Details fields 1`] = `
             Applications in Lottery
           </h4>
           <p>
-            2
-          </p>
-        </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Status
-          </h4>
-          <p>
-            Active
+            true
           </p>
         </div>
       </div>
@@ -414,52 +559,14 @@ exports[`ListingPage individual fields Leasing Agent and Developer Information f
     >
       <div
         className="content-card"
-      >
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Leasing Agent Name
-          </h4>
-          <p>
-            Cullen McCaffrey
-          </p>
-        </div>
-      </div>
+      />
     </li>
     <li
       className="content-item"
     >
       <div
         className="content-card"
-      >
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Leasing Agent Email
-          </h4>
-          <p>
-            77bluxome@eqr.com
-          </p>
-        </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Leasing Agent Phone
-          </h4>
-          <p>
-            (415) 957-5887
-          </p>
-        </div>
-      </div>
+      />
     </li>
   </ul>
 </div>
@@ -492,7 +599,7 @@ exports[`ListingPage individual fields Lottery Information fields 1`] = `
             Lottery Date
           </h4>
           <p>
-            Invalid date
+            03/22/2017
           </p>
         </div>
         <div
@@ -504,7 +611,19 @@ exports[`ListingPage individual fields Lottery Information fields 1`] = `
             Lottery Results Date
           </h4>
           <p>
-            Invalid date
+            03/22/2017
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Lottery Venue
+          </h4>
+          <p>
+            MOHCD
           </p>
         </div>
       </div>
@@ -525,6 +644,18 @@ exports[`ListingPage individual fields Lottery Information fields 1`] = `
           </h4>
           <p>
             Not Yet Run
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Lottery Street Address
+          </h4>
+          <p>
+            1 S. Van Ness Avenue 5th FL
           </p>
         </div>
         <div
@@ -562,7 +693,7 @@ Array [
           <h1
             className="lead-header_title small-serif c-oil"
           >
-            Test 5/30
+            Automated Test Listing (please do not modify)
           </h1>
           <div
             className="medium-8 columns no-padding"
@@ -575,7 +706,7 @@ Array [
             >
               <a
                 className="button tiny margin-left--half"
-                href="/listings/a0W0x000000GhJUEA0/edit"
+                href="/listings/0/edit"
               >
                 Edit Listing
               </a>
@@ -598,7 +729,7 @@ Array [
       >
         <a
           aria-selected={false}
-          href="/listings/a0W0x000000GhJUEA0"
+          href="/listings/0"
           onFocus={[Function]}
           onKeyDown={[Function]}
           role="menuitem"
@@ -613,7 +744,7 @@ Array [
       >
         <a
           aria-selected={false}
-          href="/listings/a0W0x000000GhJUEA0/applications"
+          href="/listings/0/applications"
           onFocus={[Function]}
           onKeyDown={[Function]}
           role="menuitem"
@@ -654,34 +785,10 @@ Array [
                   <h4
                     className="t-sans t-small t-bold no-margin"
                   >
-                    Owner
-                  </h4>
-                  <p>
-                    Prod Vertiba
-                  </p>
-                </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
                     Name
                   </h4>
                   <p>
-                    Test 5/30
-                  </p>
-                </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Account
-                  </h4>
-                  <p>
-                    Equity Residential
+                    Automated Test Listing (please do not modify)
                   </p>
                 </div>
                 <div
@@ -693,7 +800,7 @@ Array [
                     Application Due Date
                   </h4>
                   <p>
-                    05/31/2018
+                    12/31/2020
                   </p>
                 </div>
               </div>
@@ -713,19 +820,7 @@ Array [
                     Applications in Lottery
                   </h4>
                   <p>
-                    2
-                  </p>
-                </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Status
-                  </h4>
-                  <p>
-                    Active
+                    true
                   </p>
                 </div>
               </div>
@@ -758,7 +853,7 @@ Array [
                     Building Name
                   </h4>
                   <p>
-                    77 Bluxome
+                    Automated Test Building
                   </p>
                 </div>
                 <div
@@ -770,7 +865,7 @@ Array [
                     Building Street Address
                   </h4>
                   <p>
-                    77 Bluxome Street
+                    2601 Mission St
                   </p>
                 </div>
                 <div
@@ -797,18 +892,6 @@ Array [
                     CA
                   </p>
                 </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Building Zip Code
-                  </h4>
-                  <p>
-                    94107
-                  </p>
-                </div>
               </div>
             </li>
             <li
@@ -826,7 +909,7 @@ Array [
                     Neighborhood
                   </h4>
                   <p>
-                    South of Market
+                    Hayes Valley
                   </p>
                 </div>
                 <div
@@ -838,7 +921,7 @@ Array [
                     Developer
                   </h4>
                   <p>
-                    Equity Residential
+                    TEST Property Manager
                   </p>
                 </div>
                 <div
@@ -850,70 +933,15 @@ Array [
                     Building URL
                   </h4>
                   <a
-                    href="https://i.imgur.com/Jh8OHJY.jpg"
+                    href="https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg"
                     target="_blank"
                   >
-                    https://i.imgur.com/Jh8OHJY.jpg
+                    https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg
                   </a>
-                </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Year Built
-                  </h4>
-                  <p>
-                    2008
-                  </p>
                 </div>
               </div>
             </li>
           </ul>
-        </div>
-        <div
-          className="content-card"
-        >
-          <h4
-            className="content-card_title t-serif"
-          >
-            Listing Preferences
-          </h4>
-          <table>
-            <thead>
-              <tr>
-                <th>
-                  Name
-                </th>
-                <th>
-                  Description
-                </th>
-                <th>
-                  PDF URL
-                </th>
-                <th>
-                  Order
-                </th>
-                <th>
-                  Available Units
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  Alice Griffith Housing Development Resident
-                </td>
-                <td>
-                  For households in which at least one member was a resident of the Alice Griffith housing development. This includes baseline and current residents that lived in the targeted redevelopment site on or after the time of application for Choice Neighborhoods of October 26, 2010.
-                </td>
-                <td />
-                <td />
-                <td />
-              </tr>
-            </tbody>
-          </table>
         </div>
         <div
           className="content-card padding-bottom-none margin-bottom--half bg-trans"
@@ -931,14 +959,82 @@ Array [
             >
               <div
                 className="content-card"
-              />
+              >
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Accessibility
+                  </h4>
+                  <p>
+                    Elevator to all floors
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Amenities
+                  </h4>
+                  <p>
+                    Laundry room, underground parking, courtyard, bike room
+                  </p>
+                </div>
+              </div>
             </li>
             <li
               className="content-item"
             >
               <div
                 className="content-card"
-              />
+              >
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Deposit Min
+                  </h4>
+                  <p>
+                    2102.0
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Deposit Max
+                  </h4>
+                  <p>
+                    2355.0
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Costs Not Included
+                  </h4>
+                  <p>
+                    Tenants pay for gas, electricity.
+
+For pet fees:  Cat is allowed with a $500 refundable deposit, $250 non-refundable cleaning fee and a pet addendum.  
+
+Dogs are not allowed in the building.  
+
+One parking space per unit available for $175 a month.
+                  </p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -968,7 +1064,7 @@ Array [
                     Lottery Date
                   </h4>
                   <p>
-                    Invalid date
+                    03/22/2017
                   </p>
                 </div>
                 <div
@@ -980,7 +1076,19 @@ Array [
                     Lottery Results Date
                   </h4>
                   <p>
-                    Invalid date
+                    03/22/2017
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Lottery Venue
+                  </h4>
+                  <p>
+                    MOHCD
                   </p>
                 </div>
               </div>
@@ -1001,6 +1109,18 @@ Array [
                   </h4>
                   <p>
                     Not Yet Run
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Lottery Street Address
+                  </h4>
+                  <p>
+                    1 S. Van Ness Avenue 5th FL
                   </p>
                 </div>
                 <div
@@ -1035,7 +1155,44 @@ Array [
             >
               <div
                 className="content-card"
-              />
+              >
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Application Phone
+                  </h4>
+                  <p>
+                    (415) 227-2256
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Application Organization
+                  </h4>
+                  <p>
+                    280 Fell-BMR
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Application Street Address
+                  </h4>
+                  <p>
+                    P.O. Box 420847
+                  </p>
+                </div>
+              </div>
             </li>
             <li
               className="content-item"
@@ -1049,10 +1206,34 @@ Array [
                   <h4
                     className="t-sans t-small t-bold no-margin"
                   >
+                    Application City
+                  </h4>
+                  <p>
+                    San Francisco
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
                     Application State
                   </h4>
                   <p>
                     CA
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Application Postal Code
+                  </h4>
+                  <p>
+                    94142
                   </p>
                 </div>
               </div>
@@ -1075,52 +1256,14 @@ Array [
             >
               <div
                 className="content-card"
-              >
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Leasing Agent Name
-                  </h4>
-                  <p>
-                    Cullen McCaffrey
-                  </p>
-                </div>
-              </div>
+              />
             </li>
             <li
               className="content-item"
             >
               <div
                 className="content-card"
-              >
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Leasing Agent Email
-                  </h4>
-                  <p>
-                    77bluxome@eqr.com
-                  </p>
-                </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Leasing Agent Phone
-                  </h4>
-                  <p>
-                    (415) 957-5887
-                  </p>
-                </div>
-              </div>
+              />
             </li>
           </ul>
         </div>
@@ -1140,14 +1283,53 @@ Array [
             >
               <div
                 className="content-card"
-              />
+              >
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Building Selection Criteria
+                  </h4>
+                  <a
+                    href="https://us.awp.autotask.net/1/filelink/113bd-37ed41a1-53a7f01459-2"
+                    target="_blank"
+                  >
+                    https://us.awp.autotask.net/1/filelink/113bd-37ed41a1-53a7f01459-2
+                  </a>
+                </div>
+              </div>
             </li>
             <li
               className="content-item"
             >
               <div
                 className="content-card"
-              />
+              >
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Credit Rating
+                  </h4>
+                  <p>
+                    Provide a credit report with score from Equifax, Experian, or TransUnion dated within thirty (30) days of the application. 
+
+Accounts that are not current or that are derogatory will negatively affect the overall scoring, which could result in the denial of the application or an additional deposit may be required. 
+
+Collection accounts exceeding a combined amount of $1,000.00 (excluding student loans and medical debt) will negatively affect the overall scoring, which could result in the denial of the application or an additional deposit may be required. 
+
+Bankruptcy if not cleared will be an automatic denial of the rental application. 
+
+No Guarantors permitted.
+
+Mitigating circumstances may be considered.
+                  </p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -1167,7 +1349,32 @@ Array [
             >
               <div
                 className="content-card"
-              />
+              >
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Required Documents
+                  </h4>
+                  <p>
+                    Lottery winners will be required to fill out a building application and provide a copy of your current credit report, 3 most recent paystubs, current tax returns and W-2, and 3 most recent bank statements.
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Smoking Policy
+                  </h4>
+                  <p>
+                    Non-smoking building
+                  </p>
+                </div>
+              </div>
             </li>
             <li
               className="content-item"
@@ -1186,10 +1393,22 @@ Array [
                   <p
                     dangerouslySetInnerHTML={
                       Object {
-                        "__html": "some disclaimer",
+                        "__html": "<span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>All BMR renters must review and acknowledge the </span></span><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'> that governs this property upon the signing of a lease for a BMR unit. </span></span><br> <br><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>Applicants should be informed that BMR rental units in some buildings may convert to ownership units in the future.  In the case of conversion, BMR renters will be afforded certain rights as explained in the </span></span><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>. Applicants should inquire with the building contact person listed above to determine if the building has a minimum number of years that it must remain a rental building.  (Some buildings may have such restrictions based on government sources of financing for their building.) Most buildings may have no restrictions on conversion at all. </span></span><br> <br><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>It is also important to note that units governed by the Inclusionary Housing Program are NOT governed by the San Francisco Rent Ordinance (also known as “rent control”). Among other rules, rents may increase beyond increases allowed under “rent control.”  Please see the </span></span><span style='font-size: 12pt;'><span style='font-family: times new roman,serif;'><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a></span></span><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'> for more information. </span></span>",
                       }
                     }
                   />
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Pet Policy
+                  </h4>
+                  <p>
+                    Dogs are not allowed in the building.
+                  </p>
                 </div>
               </div>
             </li>

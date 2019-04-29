@@ -7,7 +7,7 @@ import listings from '../../fixtures/listings'
 
 describe('ListingsPage', () => {
   test('should render succesfully', () => {
-    const results = modelsFactory.listingsList()
+    const results = modelsFactory.listings
     const fields = modelsFactory.listingFields()
 
     const wrapper = renderer.create(
