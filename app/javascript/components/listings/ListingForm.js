@@ -1,9 +1,8 @@
 import React from 'react'
 import { Form } from 'react-final-form'
-import axios from 'axios'
 import { isNil } from 'lodash'
 
-import { axiosInit } from '~/utils/utils'
+import apiService from '~/apiService'
 import appPaths from '~/utils/appPaths'
 import PageHeader from '../organisms/PageHeader'
 
@@ -16,21 +15,17 @@ import ListingFormSectionsRequirements from './form/Requirements'
 import ListingFormSectionsSenior from './form/Senior'
 
 const onSubmit = async values => {
-  axiosInit(axios)
-
-  let request = null
+  let response = null
   if (isNil(values.id)) {
-    // Create a new listing
-    request = await axios.post(appPaths.toListing(), {listing: values})
+    response = await apiService.createListing(values)
   } else {
-    // Update listing
-    request = await axios.put(appPaths.toListing(values.id), {listing: values})
+    response = await apiService.updateListing(values)
   }
-
-  if (request.status === 200) {
-    window.Turbolinks.visit(appPaths.toListing())
+  console.log(response)
+  if (response) {
+    window.Turbolinks.visit(appPaths.toListing(response.id))
   } else {
-    window.alert("I'm sorry, there was an unknown error saving this to the server.")
+    window.alert("I'm sorry, there was an unknown error saving your listing to the server.")
   }
 }
 

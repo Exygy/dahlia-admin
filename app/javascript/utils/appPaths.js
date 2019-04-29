@@ -1,3 +1,5 @@
+import { isNil } from 'lodash'
+
 const toApplicationSupplementals = (applicationId) => `/applications/${applicationId}/supplementals`
 
 const toApplication = (applicationId) => `/applications/${applicationId}`
@@ -12,7 +14,7 @@ const toApplicationsFlaggedIndex = (type) => `/applications/flagged?type=${type}
 
 const toListingLeaseUps = (listingId) => `/listings/lease-ups/${listingId}/applications`
 
-const toListing = (listingId) => `/listings/${listingId}`
+const toListing = (listingId) => `/listings${isNil(listingId) ? '' : `/${listingId}`}`
 
 const toLeaseUps = () => `/listings/lease-ups`
 

@@ -1,23 +1,21 @@
 # frozen_string_literal: true
 
 # Controller for listing objects
-class ListingsController < ApplicationController
+class Api::V1::ListingsController < ApplicationController
   before_action :authenticate_user!
 
-  def index
-    @listings = Listing.all.map(&:to_salesforce_from_db)
+  def create
+    @listing = Listing.new(listing_params)
+    @listing.save
+
+    render json: { id: @listing.id }
   end
 
-  def show
-    @listing = Listing.find(params[:id]).to_salesforce_from_db
-  end
-
-  def new
-    @listing = Listing.new
-  end
-
-  def edit
+  def update
     @listing = Listing.find(params[:id])
+    @listing.update_attributes(listing_params)
+
+    render json: { id: @listing.id }
   end
 
   private

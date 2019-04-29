@@ -33,8 +33,3 @@ export const currencyToFloat = (value) => {
     return value
   }
 }
-
-export const axiosInit = (axios) => {
-  axios.defaults.headers.common['X-CSRF-Token'] = document.getElementsByName('csrf-token')[0].getAttribute('content')
-  axios.defaults.headers.common['Accept'] = 'application/json'
-}

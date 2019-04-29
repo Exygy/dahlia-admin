@@ -45,6 +45,8 @@ Rails.application.routes.draw do
 
       resources :lease_up_applications, path: 'lease-ups/applications', only: %w[index]
 
+      resources :listings, only: %w[create update]
+
       resources :preferences, only: %w[update]
 
       resources :rental_assistances, path: '/rental-assistances', only: %w[create update destroy]
