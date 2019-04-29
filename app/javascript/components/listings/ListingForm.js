@@ -1,31 +1,34 @@
 import React from 'react'
 import { Form } from 'react-final-form'
 import axios from 'axios'
+import { isNil } from 'lodash'
+
 import { axiosInit } from '~/utils/utils'
 import appPaths from '~/utils/appPaths'
 import PageHeader from '../organisms/PageHeader'
-import ListingFormSectionsGeneral from './form/General'
+
 import ListingFormSectionsBuilding from './form/Building'
-import ListingFormSectionsSenior from './form/Senior'
-import ListingFormSectionsLottery from './form/Lottery'
-import ListingFormSectionsRequirements from './form/Requirements'
-import ListingFormSectionsPolicies from './form/Policies'
 import ListingFormSectionsFees from './form/Fees'
+import ListingFormSectionsGeneral from './form/General'
+import ListingFormSectionsLottery from './form/Lottery'
+import ListingFormSectionsPolicies from './form/Policies'
+import ListingFormSectionsRequirements from './form/Requirements'
+import ListingFormSectionsSenior from './form/Senior'
 
 const onSubmit = async values => {
   axiosInit(axios)
 
   let request = null
-  if (values.id === null) {
+  if (isNil(values.id)) {
     // Create a new listing
-    request = await axios.post(appPaths.toListing(''), {listing: values})
+    request = await axios.post(appPaths.toListing(), {listing: values})
   } else {
-    // Update  listing
+    // Update listing
     request = await axios.put(appPaths.toListing(values.id), {listing: values})
   }
 
   if (request.status === 200) {
-    window.Turbolinks.visit(appPaths.toListing(''))
+    window.Turbolinks.visit(appPaths.toListing())
   } else {
     window.alert("I'm sorry, there was an unknown error saving this to the server.")
   }
@@ -38,7 +41,7 @@ const ListingForm = ({ listing }) => {
   return (
     <React.Fragment>
       <PageHeader
-        title={listing.id === null ? 'New Listing' : 'Edit Listing'} />
+        title={isNil(listing.id) ? 'New Listing' : 'Edit Listing'} />
       <div style={{height: '25px'}} />
       <Form
         onSubmit={onSubmit}

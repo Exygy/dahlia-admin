@@ -14,7 +14,6 @@ const ListingFormSectionsLottery = ({ listing }) => {
       <FormGroup>
         <SimpleCheckbox fieldName='first_come_first_served' fieldLabel='First come first served?' />
         <SimpleCheckbox fieldName='in_lottery' fieldLabel='In lottery?' />
-        <SimpleCheckbox fieldName='does_match' fieldLabel='Does match?' />
         <SimpleCheckbox fieldName='has_waitlist' fieldLabel='Has waitlist?' />
         <SimpleField fieldName='maximum_waitlist_size' fieldLabel='Maximum waitlist size' validation={MustBeNumberOrDashes} />
         <SimpleField fieldName='total_waitlist_openings' fieldLabel='Total waitlist openings' validation={MustBeNumberOrDashes} />

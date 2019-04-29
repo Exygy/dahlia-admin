@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Controller for listings objects
+# Controller for listing objects
 class ListingsController < ApplicationController
   before_action :authenticate_user!
 
