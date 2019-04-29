@@ -1,26 +1,22 @@
 export const detailsFields = [
-  { field: 'Owner.Name', label: 'Owner' },
-  'Name',
-  { field: 'Account.Name', label: 'Account' },
-  'Application_Due_Date',
-  { field: 'In_Lottery', label: 'Applications in Lottery' },
-  'Status',
-  'Lottery_Winners',
-  'Lottery_Results'
+  'name',
+  'application_due_date',
+  { field: 'in_lottery', label: 'Applications in Lottery' },
+  'lottery_winners',
+  'lottery_results'
 ]
 
 export const buildingInformationFields = [
-  'Building_Name',
-  'Building_Street_Address',
-  'Building_City',
-  'Building_State',
-  'Building_Zip_Code',
-  'Neighborhood',
-  'Developer',
-  { field: 'Building_URL', label: 'Building URL' },
-  'Year_Built',
-  'Description',
-  'Lottery_Preferences'
+  'building_name',
+  'building_street_address',
+  'building_city',
+  'building_state',
+  'building_zip_code',
+  'neighborhood',
+  'developer',
+  { field: 'building_url', label: 'Building URL' },
+  'year_built',
+  'description'
 ]
 
 export const lotteryPreferencesFields = [
@@ -32,33 +28,30 @@ export const lotteryPreferencesFields = [
 ]
 
 export const aafFields = [
-  'Accessibility',
-  'Fee',
-  'Amenities',
-  'Deposit_Min',
-  'Deposit_Max',
-  'Costs_Not_Included'
+  'accessibility',
+  'fee',
+  'amenities',
+  'deposit_min',
+  'deposit_max',
+  'costs_not_included'
 ]
 
 export const lotteryInfoFields = [
-  'Lottery_Date',
-  'Lottery_Results_Date',
-  'Lottery_Venue',
-  'Lottery_Status',
-  'Lottery_Street_Address',
-  'Lottery_Summary',
-  'Lottery_City'
+  'lottery_date',
+  'lottery_results_date',
+  'lottery_venue',
+  'lottery_status',
+  'lottery_street_address',
+  'lottery_city'
 ]
 
 export const appInfoFields = [
-  'Application_Phone',
-  'Office_Hours',
-  'Application_Organization',
-  'Application_Street_Address',
-  'Application_City',
-  'Application_State',
-  'Application_Postal_Code',
-  { field: 'Download_URL', label: 'Download URL' }
+  'application_phone',
+  'application_organization',
+  'application_street_address',
+  'application_city',
+  'application_state',
+  'application_postal_code'
 ]
 
 export const agentDevInfoFields = [
@@ -70,17 +63,15 @@ export const agentDevInfoFields = [
 ]
 
 export const eligibilityRulesFields = [
-  'Building_Selection_Criteria',
-  'Eviction_History',
-  'Criminal_History',
-  'Credit_Rating'
+  'building_selection_criteria',
+  'credit_rating'
 ]
 
 export const additionalInfoFields = [
-  'Required_Documents',
-  'Smoking_Policy',
-  { field: 'Legal_Disclaimers', renderType: 'html' },
-  'Pet_Policy'
+  'required_documents',
+  'smoking_policy',
+  { field: 'legal_disclaimers', renderType: 'html' },
+  'pet_policy'
 ]
 
 export const openHousesFields = [

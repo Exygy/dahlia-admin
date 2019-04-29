@@ -5,11 +5,11 @@ class ListingsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @listings = Listing.all.map(&:to_salesforce_from_db)
+    @listings = Listing.all
   end
 
   def show
-    @listing = Listing.find(params[:id]).to_salesforce_from_db
+    @listing = Listing.find(params[:id])
   end
 
   def new

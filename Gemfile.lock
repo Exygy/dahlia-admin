@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/Exygy/dahlia_data_models.git
+  revision: 4a041078fc0d6bb621ea7a47f1cbd8804f73bfc7
+  specs:
+    dahlia_data_models (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -339,6 +345,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  dahlia_data_models!
   devise (~> 4.6.2)
   dotenv-rails (~> 2.2)
   facets

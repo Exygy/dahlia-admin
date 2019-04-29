@@ -17,11 +17,10 @@ import {
   eligibilityRulesFields,
   additionalInfoFields
 } from 'components/listings/fields'
-import { mapListing } from '~/components/mappers/soqlToDomain'
 
 describe('ListingPage', () => {
   sharedHooks.useFakeTimers()
-  const listing = modelsFactory.listingDetail()
+  const listing = modelsFactory.listings[0]
 
   test('should render succesfully', () => {
     const wrapper = renderer.create(
@@ -45,7 +44,7 @@ describe('ListingPage', () => {
       test(`${title} fields`, () => {
         const wrapper = renderer.create(
           <ListingDetailsContentCard
-            listing={mapListing(listing)}
+            listing={listing}
             title={title}
             fields={fields} />
         )

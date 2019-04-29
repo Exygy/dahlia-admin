@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190401155821) do
+ActiveRecord::Schema.define(version: 20190426205550) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "listing_images", force: :cascade do |t|
+    t.bigint "listing_id"
+    t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["listing_id"], name: "index_listing_images_on_listing_id"
+  end
 
   create_table "listings", force: :cascade do |t|
     t.boolean "accepting_applications_at_leasing_agent", default: false, null: false

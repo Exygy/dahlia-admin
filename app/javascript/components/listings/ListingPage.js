@@ -2,12 +2,6 @@ import React from 'react'
 
 import ListingDetails from './ListingDetails'
 import CardLayout from '../layouts/CardLayout'
-import mapProps from '~/utils/mapProps'
-import { mapListing } from '~/components/mappers/soqlToDomain'
-
-const ListingPageDetails = ({ listing }) => {
-  return <ListingDetails listing={listing} />
-}
 
 const editListingButton = (listing) => (
   <a
@@ -35,15 +29,9 @@ const ListingPage = ({ listing }) => {
 
   return (
     <CardLayout pageHeader={pageHeader} tabSection={tabs}>
-      <ListingPageDetails listing={listing} />
+      <ListingDetails listing={listing} />
     </CardLayout>
   )
 }
 
-const mapProperties = ({ listing }) => {
-  return {
-    listing: mapListing(listing)
-  }
-}
-
-export default mapProps(mapProperties)(ListingPage)
+export default ListingPage
