@@ -513,7 +513,7 @@ exports[`ListingPage individual fields Details fields 1`] = `
             Application Due Date
           </h4>
           <p>
-            12/31/2020
+            01/01/2021
           </p>
         </div>
       </div>
@@ -800,7 +800,7 @@ Array [
                     Application Due Date
                   </h4>
                   <p>
-                    12/31/2020
+                    01/01/2021
                   </p>
                 </div>
               </div>

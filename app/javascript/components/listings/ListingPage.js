@@ -3,10 +3,6 @@ import React from 'react'
 import ListingDetails from './ListingDetails'
 import CardLayout from '../layouts/CardLayout'
 
-const ListingPageDetails = ({ listing }) => {
-  return <ListingDetails listing={listing} />
-}
-
 const editListingButton = (listing) => (
   <a
     key='edit-listing'
@@ -33,7 +29,7 @@ const ListingPage = ({ listing }) => {
 
   return (
     <CardLayout pageHeader={pageHeader} tabSection={tabs}>
-      <ListingPageDetails listing={listing} />
+      <ListingDetails listing={listing} />
     </CardLayout>
   )
 }
