@@ -19,6 +19,27 @@ Array [
           >
             Listings
           </h1>
+          <div
+            className="medium-8 columns no-padding"
+          >
+            <p>
+              11 listings were found.
+            </p>
+          </div>
+          <div
+            className="medium-4 columns no-padding"
+          >
+            <span
+              className="lead-header_secondary-action"
+            >
+              <a
+                className="alt-caps"
+                href="/listings/new"
+              >
+                New Listing
+              </a>
+            </span>
+          </div>
         </hgroup>
       </div>
     </div>
@@ -3092,6 +3113,27 @@ Array [
           >
             Listings
           </h1>
+          <div
+            className="medium-8 columns no-padding"
+          >
+            <p>
+              165 listings were found.
+            </p>
+          </div>
+          <div
+            className="medium-4 columns no-padding"
+          >
+            <span
+              className="lead-header_secondary-action"
+            >
+              <a
+                className="alt-caps"
+                href="/listings/new"
+              >
+                New Listing
+              </a>
+            </span>
+          </div>
         </hgroup>
       </div>
     </div>

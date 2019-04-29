@@ -16,6 +16,7 @@ import SupplementalApplicationPage from 'components/supplemental_application/Sup
 import ListingApplicationsPage from 'components/listings/ListingApplicationsPage'
 import ListingPage from 'components/listings/ListingPage'
 import ListingsPage from 'components/listings/ListingsPage'
+import ListingForm from 'components/listings/ListingForm'
 
 import HomePage from 'components/pages/HomePage'
 
@@ -33,6 +34,7 @@ WebpackerReact.setup({ SupplementalApplicationPage })
 WebpackerReact.setup({ ListingApplicationsPage })
 WebpackerReact.setup({ ListingPage })
 WebpackerReact.setup({ ListingsPage })
+WebpackerReact.setup({ ListingForm })
 WebpackerReact.setup({ HomePage })
 WebpackerReact.setup({ LeaseUpApplicationsPage })
 WebpackerReact.setup({ LeaseUpListingsPage })

@@ -9,7 +9,22 @@ const ListingPageDetails = ({ listing }) => {
   return <ListingDetails listing={listing} />
 }
 
+const editListingButton = (listing) => (
+  <a
+    key='edit-listing'
+    href={`/listings/${listing.id}/edit`}
+    className='button tiny margin-left--half'
+  >
+    Edit Listing
+  </a>
+)
+
 const ListingPage = ({ listing }) => {
+  const pageHeader = {
+    title: listing.name,
+    action: [editListingButton(listing)]
+  }
+
   const tabs = {
     items: [
       { title: 'Listing Details', url: `/listings/${listing.id}` },
@@ -19,7 +34,7 @@ const ListingPage = ({ listing }) => {
   }
 
   return (
-    <CardLayout pageHeader={{title: listing.name}} tabSection={tabs}>
+    <CardLayout pageHeader={pageHeader} tabSection={tabs}>
       <ListingPageDetails listing={listing} />
     </CardLayout>
   )

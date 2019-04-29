@@ -40,19 +40,27 @@ const ListingsPageTable = ({ page, listings, fields }) => {
       page={page}
       results={listings}
       fields={fields}
-      links={['View Listing', 'Add Application', 'Lease Ups']} />
+      links={['View Listing', 'Edit Listing', 'Add Application', 'Lease Ups']} />
   )
 }
 
-const layout = {
-  pageHeader: {
-    title: 'Listings'
+const layout = (listings) => {
+  const listingsLength = listings ? listings.length : 0
+  return {
+    pageHeader: {
+      title: 'Listings',
+      content: `${listingsLength} listings were found.`,
+      action: {
+        link: '/listings/new',
+        title: 'New Listing'
+      }
+    }
   }
 }
 
 const ListingsPage = ({ page, listings }) => {
   return (
-    <TableLayout {...layout}>
+    <TableLayout {...layout(listings)}>
       <ListingsPageTable page={page} listings={listings} fields={tableFields} />
     </TableLayout>
   )

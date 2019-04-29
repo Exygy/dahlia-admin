@@ -564,6 +564,23 @@ Array [
           >
             Test 5/30
           </h1>
+          <div
+            className="medium-8 columns no-padding"
+          />
+          <div
+            className="medium-4 columns no-padding"
+          >
+            <span
+              className="lead-header_secondary-action"
+            >
+              <a
+                className="button tiny margin-left--half"
+                href="/listings/a0W0x000000GhJUEA0/edit"
+              >
+                Edit Listing
+              </a>
+            </span>
+          </div>
         </hgroup>
       </div>
     </div>

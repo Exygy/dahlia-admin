@@ -38,12 +38,12 @@ const PageHeader = ({ title, content, action, breadcrumbs, background }) => {
           { breadcrumbs && <BreadCrumbs items={breadcrumbs} />}
           <hgroup className='lead-header_group'>
             <h1 className={`lead-header_title ${breadcrumbs ? 'small' : 'small-serif'} c-oil`}>{title}</h1>
-            { content && (
-              <div className='medium-8 columns no-padding'>
+            <div className='medium-8 columns no-padding'>
+              { content && (
                 <p>{content}</p>
-              </div>
-            )
-            }
+              )
+              }
+            </div>
             <Actions actions={action} />
           </hgroup>
         </div>

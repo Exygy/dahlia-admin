@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   end
 
   # Salesforce resources
-  resources :listings, only: %w[index show] do
+  resources :listings do
     resources :applications, only: %w[new index], module: 'listings'
     collection do
       resources :lease_ups, path: '/lease-ups', only: %w[index], module: 'listings' do
@@ -44,6 +44,8 @@ Rails.application.routes.draw do
       end
 
       resources :lease_up_applications, path: 'lease-ups/applications', only: %w[index]
+
+      resources :listings, only: %w[create update]
 
       resources :preferences, only: %w[update]
 

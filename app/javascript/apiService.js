@@ -1,6 +1,9 @@
 import axios from 'axios'
 
 const apiCall = async (method, path, data) => {
+  axios.defaults.headers.common['X-CSRF-Token'] = document.getElementsByName('csrf-token')[0].getAttribute('content')
+  axios.defaults.headers.common['Accept'] = 'application/json'
+
   if (process.env.NODE_ENV === 'test') { throw new Error('API should not be called in TEST') }
 
   try {
@@ -109,6 +112,20 @@ const deleteRentalAssistance = async (rentalAssistanceId) => {
   return apiCall('delete', `/rental-assistances/${rentalAssistanceId}`)
 }
 
+const createListing = async (listing) => {
+  const postData = {
+    listing: listing
+  }
+  return apiCall('post', '/listings', postData)
+}
+
+const updateListing = async (listing) => {
+  const putData = {
+    listing: listing
+  }
+  return apiCall('put', `/listings/${listing.id}`, putData)
+}
+
 export default {
   updateApplication,
   updateFlaggedApplication,
@@ -120,5 +137,7 @@ export default {
   createFieldUpdateComment,
   createRentalAssistance,
   updateRentalAssistance,
-  deleteRentalAssistance
+  deleteRentalAssistance,
+  createListing,
+  updateListing
 }
