@@ -14,7 +14,7 @@ class ApplicationPolicy
   end
 
   def show?
-    false
+    update?
   end
 
   def create?
@@ -34,7 +34,7 @@ class ApplicationPolicy
   end
 
   def destroy?
-    false
+    update?
   end
 
   # Scope object can be used to fetch records with certain permissions

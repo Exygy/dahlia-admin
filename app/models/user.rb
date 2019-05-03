@@ -10,7 +10,7 @@ class User < ApplicationRecord
           :registerable,
           :recoverable
 
-  enum role: [:admin]
+  enum role: %i[admin superadmin]
   after_initialize :set_default_role, if: :new_record?
 
   belongs_to :group, required: false
