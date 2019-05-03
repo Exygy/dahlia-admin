@@ -13,6 +13,12 @@ class User < ApplicationRecord
   enum role: [:admin]
   after_initialize :set_default_role, if: :new_record?
 
+  belongs_to :group, required: false
+
+  def group_and_descendants
+    group.self_and_descendants
+  end
+
   def self.from_omniauth(auth)
     user = User.where(provider: auth.provider, uid: auth.uid, email: auth.extra.username).first ||
            User.new

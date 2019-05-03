@@ -1,9 +1,9 @@
 {
   "name": "sf-dahlia-lap",
-  "scripts": {
-    "postdeploy": "rake db:schema:load && rake db:seed"
-  },
   "env": {
+    "DATABASE_URL": {
+      "required": true
+    },
     "LANG": {
       "required": true
     },
@@ -32,8 +32,7 @@
     }
   },
   "addons": [
-    "papertrail",
-    "heroku-postgresql"
+    "papertrail"
   ],
   "buildpacks": [
     {
