@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/Exygy/dahlia_data_models.git
-  revision: fb96e89bdfc12b4333de0affe2f72aadf15c9420
+  revision: 1383c833e2d2d40c2b409a96db5a0c12551b0c2f
+  ref: 1383c83
   specs:
     dahlia_data_models (0.1.0)
       awesome_nested_set (~> 3.1)
