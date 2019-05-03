@@ -1,8 +1,10 @@
 GIT
   remote: https://github.com/Exygy/dahlia_data_models.git
-  revision: 4a041078fc0d6bb621ea7a47f1cbd8804f73bfc7
+  revision: fb96e89bdfc12b4333de0affe2f72aadf15c9420
   specs:
     dahlia_data_models (0.1.0)
+      awesome_nested_set (~> 3.1)
+      rails (~> 5.1)
 
 GEM
   remote: https://rubygems.org/
@@ -48,6 +50,8 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
     ast (2.3.0)
+    awesome_nested_set (3.1.4)
+      activerecord (>= 4.0.0, < 5.3)
     awesome_print (1.8.0)
     bcrypt (3.1.11)
     better_errors (2.4.0)
