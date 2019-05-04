@@ -73,7 +73,7 @@ describe.only('Listings', () => {
     })
     let page = await browser.newPage()
 
-    viewListing(page, 'A Name')
+    await viewListing(page, 'A Name')
 
     await browser.close()
   }, 16000)
@@ -127,7 +127,7 @@ describe.only('Listings', () => {
     })
     let page = await browser.newPage()
 
-    viewListing(page, 'An Updated Name')
+    await viewListing(page, 'An Updated Name')
 
     await browser.close()
   }, 16000)
