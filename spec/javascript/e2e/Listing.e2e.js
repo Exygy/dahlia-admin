@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer'
 import { HEADLESS } from '../support/puppeteer/consts'
-import { loginAsAgent, goto, enterValue } from '../support/puppeteer/steps/sharedSteps'
+import { loginAsAgent, goto, enterValue, viewListing } from '../support/puppeteer/steps/sharedSteps'
 import { LISTING_FORM_REQUIRED_FIELDS } from '../utils'
 
 describe.only('Listings', () => {
@@ -72,12 +72,8 @@ describe.only('Listings', () => {
       headless: HEADLESS
     })
     let page = await browser.newPage()
-    await loginAsAgent(page)
 
-    await goto(page, 'listings')
-
-    const found = (await page.content()).match('A Name')
-    expect(found.length).toBe(1)
+    viewListing(page, 'A Name')
 
     await browser.close()
   }, 16000)
@@ -130,12 +126,8 @@ describe.only('Listings', () => {
       headless: HEADLESS
     })
     let page = await browser.newPage()
-    await loginAsAgent(page)
 
-    await goto(page, 'listings')
-
-    const found = (await page.content()).match('An Updated Name')
-    expect(found.length).toBe(1)
+    viewListing(page, 'An Updated Name')
 
     await browser.close()
   }, 16000)

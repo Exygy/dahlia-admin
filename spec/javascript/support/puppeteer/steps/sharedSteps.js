@@ -30,3 +30,12 @@ export const enterValue = async (page, selector, value) => {
   // Enter the value
   await page.type(selector, value)
 }
+
+export const viewListing = async (page, listingMatch) => {
+  await loginAsAgent(page)
+
+  await goto(page, 'listings')
+
+  const found = (await page.content()).match(listingMatch)
+  expect(found.length).toBe(1)
+}
