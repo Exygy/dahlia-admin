@@ -26,6 +26,25 @@ RSpec.describe ListingPolicy, type: :policy do
       listings = ListingPolicy::Scope.new(superadmin_user, Listing).resolve
       expect(listings.count).to eq(3)
     end
+
+    it 'show listings for hierarchical groups' do
+      parent_group = Group.create(name: 'Parent')
+      child_group = Group.create(name: 'Child', parent: parent_group)
+      parent_group = parent_group.reload
+
+      li1 = Listing.create(name: 'Listing for Parent Group', group: parent_group)
+      li2 = Listing.create(name: 'Listing for Child Group', group: child_group)
+
+      # User can see parent and child group listings
+      user = User.new(group: parent_group)
+      listings = ListingPolicy::Scope.new(user, Listing).resolve
+      expect((listings.pluck(:id) & [li1.id, li2.id]).length).to eq(2)
+
+      # User of child group can only see child listings
+      child_user = User.new(group: child_group)
+      child_listings = ListingPolicy::Scope.new(child_user, Listing).resolve
+      expect((child_listings.pluck(:id) & [li1.id, li2.id]).length).to eq(1)
+    end
   end
 
   permissions :show? do
