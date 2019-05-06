@@ -27,7 +27,7 @@ RSpec.describe ListingPolicy, type: :policy do
       expect(listings.count).to eq(3)
     end
 
-    it 'show listings for hierarchical groups' do
+    it 'shows listings for hierarchical groups' do
       parent_group = Group.create(name: 'Parent')
       child_group = Group.create(name: 'Child', parent: parent_group)
       parent_group = parent_group.reload
