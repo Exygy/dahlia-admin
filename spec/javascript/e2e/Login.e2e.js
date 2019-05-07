@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer'
-import { TEST_USER_EMAIL, TEST_USER_PASSWORD, HEADLESS } from '../support/puppeteer/consts'
+import { HEADLESS, TEST_HOST, TEST_USER_EMAIL, TEST_USER_PASSWORD } from '../support/puppeteer/consts'
 
 describe('Lead header', () => {
   test('lead header loads correctly', async () => {
@@ -8,7 +8,7 @@ describe('Lead header', () => {
     })
     let page = await browser.newPage()
 
-    await page.goto('http://localhost:3000/')
+    await page.goto(TEST_HOST)
     await page.waitForSelector('#root')
 
     const html = await page.$eval('.lead-header_title', e => e.innerHTML)
@@ -25,7 +25,7 @@ describe('Sign in page', () => {
     })
     let page = await browser.newPage()
 
-    await page.goto('http://localhost:3000/users/sign_in')
+    await page.goto(`${TEST_HOST}/users/sign_in`)
     await page.waitForSelector('#root')
 
     const titleHtml = await page.$eval('h1.dash-title', e => e.innerHTML)
@@ -43,7 +43,7 @@ describe('Sign in page', () => {
     })
     let page = await browser.newPage()
 
-    await page.goto('http://localhost:3000/users/sign_in')
+    await page.goto(`${TEST_HOST}/users/sign_in`)
     await page.waitForSelector('#root')
 
     await page.type('#user_email', 'nope@testing.test')
@@ -66,7 +66,7 @@ describe('Sign in page', () => {
     })
     let page = await browser.newPage()
 
-    await page.goto('http://localhost:3000/users/sign_in')
+    await page.goto(`${TEST_HOST}/users/sign_in`)
     await page.waitForSelector('#root')
 
     await page.type('#user_email', TEST_USER_EMAIL)

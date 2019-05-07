@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer'
-import { HEADLESS } from '../support/puppeteer/consts'
+import { HEADLESS, TEST_HOST } from '../support/puppeteer/consts'
 import { loginAsAgent, goto, enterValue, viewListing } from '../support/puppeteer/steps/sharedSteps'
 import { LISTING_FORM_REQUIRED_FIELDS } from '../utils'
 
@@ -17,7 +17,7 @@ describe.only('Listings', () => {
     expect(titleHtml).toBe('Listings')
 
     const link = await page.$eval('span.lead-header_secondary-action a', e => e.href)
-    expect(link).toBe('http://localhost:3000/listings/new')
+    expect(link).toBe(`${TEST_HOST}/listings/new`)
     const linkText = await page.$eval('span.lead-header_secondary-action a', e => e.innerHTML)
     expect(linkText).toBe('New Listing')
 
@@ -44,7 +44,7 @@ describe.only('Listings', () => {
 
     const titleHtml = await page.$eval('h1.lead-header_title', e => e.innerHTML)
     expect(titleHtml).toBe('New Listing')
-    // Promise.all does not work when typing simulataneously apparently
+    // Promise.all does not work when typing simultaneously apparently
     await page.type('#form-name', 'A Name')
     await page.type('#form-application_organization', 'An Organization')
     await page.type('#form-application_city', 'City')
@@ -101,7 +101,7 @@ describe.only('Listings', () => {
     const titleHtml = await page.$eval('h1.lead-header_title', e => e.innerHTML)
     expect(titleHtml).toBe('Edit Listing')
 
-    // Promise.all does not work when typing simulataneously apparently
+    // Promise.all does not work when typing simultaneously apparently
     await enterValue(page, '#form-name', 'An Updated Name')
     await enterValue(page, '#form-application_organization', 'An Updated Organization')
     await enterValue(page, '#form-application_city', 'Updated City')

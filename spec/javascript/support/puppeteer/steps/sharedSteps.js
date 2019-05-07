@@ -1,8 +1,7 @@
-import { TEST_USER_EMAIL, TEST_USER_PASSWORD } from '../consts'
-const HOST = 'http://localhost:3000/'
+import { TEST_HOST, TEST_USER_EMAIL, TEST_USER_PASSWORD } from '../consts'
 
 export const goto = async (page, path) => {
-  await page.goto(`${HOST}${path}`)
+  await page.goto(`${TEST_HOST}/${path}`)
   await waitForApp(page)
 }
 

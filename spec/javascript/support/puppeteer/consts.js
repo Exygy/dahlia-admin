@@ -15,3 +15,6 @@ export const DEFAULT_E2E_TIME_OUT = 260000
 
 // Change to false to see tests running on browser locally
 export const HEADLESS = true
+
+// For e2e tests, we run a Rails server in the test env on port 3001
+export const TEST_HOST = 'http://localhost:3001'
