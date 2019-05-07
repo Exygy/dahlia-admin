@@ -71,7 +71,8 @@ export const additionalInfoFields = [
   'required_documents',
   'smoking_policy',
   { field: 'legal_disclaimers', renderType: 'html' },
-  'pet_policy'
+  'pet_policy',
+  'unit_amenities'
 ]
 
 export const openHousesFields = [

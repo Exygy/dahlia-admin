@@ -12,6 +12,7 @@ const ListingFormSectionsRequirements = ({ listing }) => {
         <SimpleTextArea fieldName='building_selection_criteria' fieldLabel='Building Selection Criteria Description' />
         <SimpleTextArea fieldName='required_documents' fieldLabel='Required Documents Description' />
         <SimpleTextArea fieldName='legal_disclaimers' fieldLabel='Legal Disclaimers' />
+        <SimpleTextArea fieldName='unit_amenities' fieldLabel='Unit Amenities' />
       </FormGroup>
     </React.Fragment>
   )

@@ -2,6 +2,7 @@ import React from 'react'
 import FormGroup from '../../atoms/FormGroup'
 import { Required, MustBeNumberOrDashes } from '~/utils/final-form/validations'
 import { SimpleField } from '~/utils/final-form/SimpleField'
+import { SimpleCheckbox } from '~/utils/final-form/SimpleCheckbox'
 
 const ListingFormSectionsBuilding = ({ listing }) => {
   return (
@@ -22,6 +23,7 @@ const ListingFormSectionsBuilding = ({ listing }) => {
       <FormGroup>
         <SimpleField fieldName='accessibility' fieldLabel='Accessibility' />
         <SimpleField fieldName='amenities' fieldLabel='Amenities' />
+        <SimpleCheckbox fieldName='show_unit_features' fieldLabel='Show unit features?' />
       </FormGroup>
     </React.Fragment>
   )
