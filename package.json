@@ -73,10 +73,10 @@
     "lint:fix": "standard \"./**/*.js\" --fix | snazzy",
     "lint": "standard \"./**/*.js\" | snazzy",
     "rails-server": "rails s",
-    "rails-server-test": "RAILS_ENV=test rails db:reset; RAILS_ENV=test rails s -p 3001 --pid tmp/pids/server_test.pid",
+    "rails-server-test": "RAILS_ENV=test bundle exec rails db:reset; RAILS_ENV=test bundle exec rails s -p 3001 --pid tmp/pids/server_test.pid &",
     "start": "npm-run-all -p -l webpack-hot rails-server",
     "test:all": "jest",
-    "test:e2e": "jest --testPathPattern=.*e2e.* --runInBand. --forceExit",
+    "test:e2e": "jest --testPathPattern=.*e2e.* --runInBand. --forceExit; kill $(cat tmp/pids/server_test.pid)",
     "test:unit": "jest --testPathPattern=.*.test.js$ --coverage",
     "webpack-hot": "bin/webpack-dev-server --hot"
   },
