@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer'
 import { HEADLESS, TEST_HOST } from '../support/puppeteer/consts'
-import { loginAsAgent, goto, enterValue, viewListing } from '../support/puppeteer/steps/sharedSteps'
+import { loginAsAgent, goto, enterValue, checkForListing } from '../support/puppeteer/steps/sharedSteps'
 import { LISTING_FORM_REQUIRED_FIELDS } from '../utils'
 
 describe.only('Listings', () => {
@@ -73,7 +73,7 @@ describe.only('Listings', () => {
     })
     let page = await browser.newPage()
 
-    await viewListing(page, 'A Name')
+    await checkForListing(page, 'A Name')
 
     await browser.close()
   }, 16000)
@@ -113,7 +113,7 @@ describe.only('Listings', () => {
     await enterValue(page, '#form-developer', 'Updated Developer')
 
     await page.click('button[type=submit]')
-    await page.waitFor(1000)
+    await page.waitFor(2000)
 
     const listingTab = await page.$eval('li.active a', e => e.innerHTML)
     expect(listingTab).toBe('Listing Details')
@@ -127,7 +127,7 @@ describe.only('Listings', () => {
     })
     let page = await browser.newPage()
 
-    await viewListing(page, 'An Updated Name')
+    await checkForListing(page, 'An Updated Name')
 
     await browser.close()
   }, 16000)

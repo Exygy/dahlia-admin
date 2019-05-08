@@ -12,12 +12,10 @@ export async function testRequired ({ name, value }, TestedComponent, props) {
     await wait(100)
     expect(wrapper.exists('.form-group')).toEqual(true)
 
-    const errorElementSel =
-      `#form-${name} + .error`
+    const errorElementSel = `#form-${name} + .error`
     expect(wrapper.find(errorElementSel).text()).toEqual('This field is required')
 
-    const fieldSel =
-      `#form-${name}`
+    const fieldSel = `#form-${name}`
     wrapper.find(fieldSel).first().simulate('change', { target: { value } })
     wrapper.find('form').first().simulate('submit')
     await wait(100)
@@ -34,12 +32,10 @@ export async function testNumbersOrDashes ({ name, value }, TestedComponent, pro
     wrapper.find('form').first().simulate('submit')
     await wait(100)
 
-    const errorElementSel =
-      `#form-${name} + .error`
+    const errorElementSel = `#form-${name} + .error`
     expect(wrapper.find(errorElementSel).text()).toEqual('This field must be a number')
 
-    const fieldSel =
-      `#form-${name}`
+    const fieldSel = `#form-${name}`
     wrapper.find(fieldSel).first().simulate('change', { target: { value } })
     wrapper.find('form').first().simulate('submit')
     await wait(100)
