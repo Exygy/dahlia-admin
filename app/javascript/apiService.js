@@ -1,10 +1,11 @@
 import axios from 'axios'
 
 const apiCall = async (method, path, data) => {
-  axios.defaults.headers.common['X-CSRF-Token'] = document.getElementsByName('csrf-token')[0].getAttribute('content')
+  const csrfToken = document.getElementsByName('csrf-token')[0]
+  if (csrfToken) {
+    axios.defaults.headers.common['X-CSRF-Token'] = csrfToken.getAttribute('content')
+  }
   axios.defaults.headers.common['Accept'] = 'application/json'
-
-  if (process.env.NODE_ENV === 'test') { throw new Error('API should not be called in TEST') }
 
   try {
     const request = await axios[method](`/api/v1${path}`, data)

@@ -1,59 +1,38 @@
-/* global wait */
+/* global mount */
 import React from 'react'
-import { mount } from 'enzyme'
 
 import listing from '../../fixtures/listing'
 import ListingForm from 'components/listings/ListingForm'
 
-describe('ListingForm', () => {
+import { testRequired, testNumbersOrDashes } from './utils'
+import { LISTING_FORM_REQUIRED_FIELDS, LISTING_FORM_NUMBERS_DASHES_FIELDS } from '../../utils'
+
+describe.only('ListingForm', () => {
   describe('should validate fields correctly: ', () => {
     beforeEach(() => {
       listing.name = ''
-      listing.deposit_min = 'abcd'
+      LISTING_FORM_NUMBERS_DASHES_FIELDS.map(field => { listing[field.name] = 'abcd' })
     })
 
-    test('Required', async () => {
+    LISTING_FORM_REQUIRED_FIELDS.map(field => testRequired(field, ListingForm, { listing }))
+
+    LISTING_FORM_NUMBERS_DASHES_FIELDS.map(field => testNumbersOrDashes(field, ListingForm, { listing }))
+
+    test(`New Listing Prop Effects`, async () => {
       const wrapper = mount(
-        <ListingForm
-          listing={listing}
-        />
+        <ListingForm listing={listing} />
       )
 
-      wrapper.find('form').first().simulate('submit')
-      await wait(100)
-      expect(wrapper.exists('.form-group')).toEqual(true)
-
-      const errorElementSel =
-        `#form-name + .error`
-      expect(wrapper.find(errorElementSel).text()).toEqual('This field is required')
-
-      const nameFieldSel =
-        `#form-name`
-      wrapper.find(nameFieldSel).first().simulate('change', { target: { value: 'A Name' } })
-      wrapper.find('form').first().simulate('submit')
-      await wait(100)
-      expect(wrapper.find(errorElementSel).length).toEqual(0)
+      expect(wrapper.find('h1.lead-header_title').text()).toEqual('New Listing')
     })
 
-    test('MustBeNumberOrDashes', async () => {
+    test(`Edit Listing Prop Effects`, async () => {
+      listing.id = '12345'
       const wrapper = mount(
-        <ListingForm
-          listing={listing}
-        />
+        <ListingForm listing={listing} />
       )
 
-      wrapper.find('form').first().simulate('submit')
-      await wait(100)
-      const errorElementSel =
-        `#form-deposit_min + .error`
-      expect(wrapper.find(errorElementSel).text()).toEqual('This field must be a number')
-
-      const depositMinFieldSel =
-        `#form-deposit_min`
-      wrapper.find(depositMinFieldSel).first().simulate('change', { target: { value: '2000.50' } })
-      wrapper.find('form').first().simulate('submit')
-      await wait(100)
-      expect(wrapper.find(errorElementSel).length).toEqual(0)
+      expect(wrapper.find('h1.lead-header_title').text()).toEqual('Edit Listing')
     })
   })
 })

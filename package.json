@@ -61,6 +61,7 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "7.4.0",
     "jest": "^22.4.3",
+    "npm-run-all": "^4.1.5",
     "react-test-renderer": "^16.3.2",
     "sinon": "^4.5.0",
     "snazzy": "^7.1.1",
@@ -69,14 +70,15 @@
     "webpack-dev-server": "^2.9.3"
   },
   "scripts": {
-    "unit": "yarn run test:seed; jest --testPathPattern=.*.test.js$ --coverage",
-    "e2e": "yarn run test:seed; jest --testPathPattern=.*e2e.* --runInBand",
-    "test:all": "yarn run test:seed; jest",
-    "test:unit": "yarn run test:seed; jest --testPathPattern=.*.test.js$ --coverage",
-    "test:e2e": "yarn run test:seed; jest --testPathPattern=.*e2e.* --runInBand. --forceExit",
-    "test:seed": "bundle exec rails e2e_seed_data:install",
+    "lint:fix": "standard \"./**/*.js\" --fix | snazzy",
     "lint": "standard \"./**/*.js\" | snazzy",
-    "lint:fix": "standard \"./**/*.js\" --fix | snazzy"
+    "rails-server": "rails s",
+    "rails-server-test": "RAILS_ENV=test bundle exec rails db:reset; RAILS_ENV=test bundle exec rails s -p 3001 --pid tmp/pids/server_test.pid &",
+    "start": "npm-run-all -p -l webpack-hot rails-server",
+    "test:all": "jest",
+    "test:e2e": "jest --testPathPattern=.*e2e.* --runInBand. --forceExit; kill $(cat tmp/pids/server_test.pid)",
+    "test:unit": "jest --testPathPattern=.*.test.js$ --coverage",
+    "webpack-hot": "bin/webpack-dev-server --hot"
   },
   "jest": {
     "coverageReporters": [
