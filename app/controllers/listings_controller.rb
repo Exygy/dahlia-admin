@@ -5,11 +5,12 @@ class ListingsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @listings = Listing.all
+    authorize Listing
+    @listings = policy_scope(Listing)
   end
 
   def show
-    @listing = Listing.find(params[:id])
+    @listing = authorize Listing.find(params[:id])
   end
 
   def new
@@ -17,7 +18,7 @@ class ListingsController < ApplicationController
   end
 
   def edit
-    @listing = Listing.find(params[:id])
+    @listing = authorize Listing.find(params[:id])
   end
 
   private
