@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form } from 'react-final-form'
+import { Formik as Form } from 'formik'
 import { isNil } from 'lodash'
 
 import apiService from '~/apiService'
@@ -13,8 +13,9 @@ import ListingFormSectionsLottery from './form/Lottery'
 import ListingFormSectionsPolicies from './form/Policies'
 import ListingFormSectionsRequirements from './form/Requirements'
 import ListingFormSectionsSenior from './form/Senior'
+import { FormRow, FormColumn, Spacer } from '~/utils/form/layout'
 
-const onSubmit = async values => {
+const onSubmit = async (values, actions) => {
   let response = null
   if (isNil(values.id)) {
     response = await apiService.createListing(values)
@@ -29,61 +30,56 @@ const onSubmit = async values => {
   }
 }
 
-const ListingForm = ({ listing }) => {
-  const rowClass = 'row inner--3x full-width'
-  const columnClass = 'column medium-9 large-6'
-
-  return (
-    <React.Fragment>
-      <PageHeader
-        title={isNil(listing.id) ? 'New Listing' : 'Edit Listing'} />
-      <div style={{height: '25px'}} />
-      <Form
-        onSubmit={onSubmit}
-        initialValues={listing}
-        render={({ handleSubmit, form, submitting, pristine, values }) => (
-          <form onSubmit={handleSubmit}>
-            <div className={rowClass}>
-              <div className={columnClass}>
-                <ListingFormSectionsGeneral listing={listing} />
-              </div>
-              <div className={columnClass}>
-                <ListingFormSectionsBuilding listing={listing} />
-              </div>
-            </div>
-            <div style={{height: '25px'}} />
-            <div className={rowClass}>
-              <div className={columnClass}>
-                <ListingFormSectionsLottery listing={listing} />
-              </div>
-              <div className={columnClass}>
-                <ListingFormSectionsSenior listing={listing} />
-                <br />
-                <ListingFormSectionsFees listing={listing} />
-              </div>
-            </div>
-            <div style={{height: '25px'}} />
-            <div className={rowClass}>
-              <div className={columnClass}>
-                <ListingFormSectionsRequirements listing={listing} />
-              </div>
-              <div className={columnClass}>
-                <ListingFormSectionsPolicies listing={listing} />
-              </div>
-            </div>
-            <div style={{height: '25px'}} />
-            <div className={rowClass}>
-              <div className={columnClass}>
-                <button type='submit' disabled={submitting}>
-                  Submit
-                </button>
-              </div>
-            </div>
-          </form>
-        )}
-      />
-    </React.Fragment>
-  )
-}
+const ListingForm = ({ listing }) => (
+  <React.Fragment>
+    <PageHeader
+      title={isNil(listing.id) ? 'New Listing' : 'Edit Listing'} />
+    <Spacer />
+    <Form
+      onSubmit={onSubmit}
+      initialValues={listing}
+      render={({ handleSubmit, isSubmitting, dirty, ...formikProps }) => (
+        <form onSubmit={handleSubmit}>
+          <FormRow>
+            <FormColumn>
+              <ListingFormSectionsGeneral {...formikProps} />
+            </FormColumn>
+            <FormColumn>
+              <ListingFormSectionsBuilding {...formikProps} />
+            </FormColumn>
+          </FormRow>
+          <Spacer />
+          <FormRow>
+            <FormColumn>
+              <ListingFormSectionsLottery {...formikProps} />
+            </FormColumn>
+            <FormColumn>
+              <ListingFormSectionsSenior {...formikProps} />
+              <br />
+              <ListingFormSectionsFees {...formikProps} />
+            </FormColumn>
+          </FormRow>
+          <Spacer />
+          <FormRow>
+            <FormColumn>
+              <ListingFormSectionsRequirements {...formikProps} />
+            </FormColumn>
+            <FormColumn>
+              <ListingFormSectionsPolicies {...formikProps} />
+            </FormColumn>
+          </FormRow>
+          <Spacer />
+          <FormRow>
+            <FormColumn>
+              <button type='submit' disabled={isSubmitting || dirty}>
+                Submit
+              </button>
+            </FormColumn>
+          </FormRow>
+        </form>
+      )}
+    />
+  </React.Fragment>
+)
 
 export default ListingForm
