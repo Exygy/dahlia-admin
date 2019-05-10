@@ -72,6 +72,7 @@
   "scripts": {
     "lint:fix": "standard \"./**/*.js\" --fix | snazzy",
     "lint": "standard \"./**/*.js\" | snazzy",
+    "rails-clean-test-db": "RAILS_ENV=test bundle exec rails db:drop; RAILS_ENV=test bundle exec rails db:create; RAILS_ENV=test bundle exec rails db:migrate",
     "rails-server": "rails s",
     "rails-server-test": "RAILS_ENV=test bundle exec rails db:reset; RAILS_ENV=test bundle exec rails s -p 3001 --pid tmp/pids/server_test.pid &",
     "start": "npm-run-all -p -l webpack-hot rails-server",

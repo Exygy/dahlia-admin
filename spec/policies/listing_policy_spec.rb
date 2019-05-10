@@ -17,7 +17,7 @@ RSpec.describe ListingPolicy, type: :policy do
       Listing.create(name: 'Listing 2 for Group 2', group: group2)
     end
 
-    it 'provides only acessible listings for the admin' do
+    it 'provides only accessible listings for the admin' do
       listings = ListingPolicy::Scope.new(admin_user, Listing).resolve
       expect(listings.count).to eq(1)
     end
