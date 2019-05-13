@@ -1,4 +1,5 @@
 import React from 'react'
+import Dropzone from 'react-dropzone'
 import { Field } from 'react-final-form'
 import FormGroup from '../../atoms/FormGroup'
 import { Required, MustBeNumberOrDashes } from '~/utils/final-form/validations'
@@ -14,6 +15,16 @@ const ListingFormSectionsGeneral = ({ listing }) => {
       <FormGroup>
         <SimpleField fieldName='name' fieldLabel='Name' validation={Required} />
         <SimpleField fieldName='image_url' fieldLabel='Image URL' />
+        <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+          {({getRootProps, getInputProps}) => (
+            <section>
+              <div {...getRootProps()}>
+                <input {...getInputProps()} />
+                <p>Drag 'n' drop some files here, or click to select files</p>
+              </div>
+            </section>
+          )}
+        </Dropzone>
         <SimpleField fieldName='marketing_url' fieldLabel='Marketing URL' />
         <SimpleField fieldName='priorities_descriptor' fieldLabel='Priorities descriptor' />
         <SimpleField fieldName='program_type' fieldLabel='Program type' />
