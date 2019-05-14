@@ -23,5 +23,6 @@ end
 if Rails.env.test?
   User.find_or_create_by(email: ENV['E2E_TEST_USER_EMAIL'] || 'test@domain.com') do |user|
     user.password = ENV['E2E_TEST_USER_PASSWORD'] || 'dc29b69cb66321f'
+    user.group = Group.find_by_domain('localhost')
   end
 end
