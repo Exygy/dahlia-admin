@@ -11,6 +11,11 @@ RSpec.describe ListingPolicy, type: :policy do
   subject { described_class }
 
   permissions '.scope' do
+    before :all do
+      # For these scope tests, we need a blank table
+      Listing.destroy_all
+    end
+
     before :each do
       Listing.create(name: 'Listing for Group 1', group: group1)
       Listing.create(name: 'Listing for Group 2', group: group2)
