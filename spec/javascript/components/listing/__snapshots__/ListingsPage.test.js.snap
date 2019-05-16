@@ -54,7 +54,6 @@ Array [
       <div
         className="rt-table"
         role="grid"
-        style={undefined}
       >
         <div
           className="rt-thead -header"
@@ -67,7 +66,6 @@ Array [
           <div
             className="rt-tr"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-th"
@@ -267,7 +265,6 @@ Array [
           <div
             className="rt-tr"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-th"
@@ -302,16 +299,13 @@ Array [
                     "width": "100%",
                   }
                 }
-                value={undefined}
               >
                 <option
                   value="all"
                 >
                   Show All
                 </option>
-                <option
-                  value={undefined}
-                />
+                <option />
               </select>
             </div>
             <div
@@ -410,7 +404,6 @@ Array [
               className="rt-tr -odd"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -534,7 +527,6 @@ Array [
               className="rt-tr -even"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -3015,7 +3007,6 @@ Array [
       >
         <div
           className="-pagination"
-          style={undefined}
         >
           <div
             className="-previous"
@@ -3191,7 +3182,6 @@ Array [
       <div
         className="rt-table"
         role="grid"
-        style={undefined}
       >
         <div
           className="rt-thead -header"
@@ -3204,7 +3194,6 @@ Array [
           <div
             className="rt-tr"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-th"
@@ -3404,7 +3393,6 @@ Array [
           <div
             className="rt-tr"
             role="row"
-            style={undefined}
           >
             <div
               className="rt-th"
@@ -3439,16 +3427,13 @@ Array [
                     "width": "100%",
                   }
                 }
-                value={undefined}
               >
                 <option
                   value="all"
                 >
                   Show All
                 </option>
-                <option
-                  value={undefined}
-                />
+                <option />
               </select>
             </div>
             <div
@@ -3547,7 +3532,6 @@ Array [
               className="rt-tr -odd"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -3661,7 +3645,6 @@ Array [
               className="rt-tr -even"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -3775,7 +3758,6 @@ Array [
               className="rt-tr -odd"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -3889,7 +3871,6 @@ Array [
               className="rt-tr -even"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -4003,7 +3984,6 @@ Array [
               className="rt-tr -odd"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -4117,7 +4097,6 @@ Array [
               className="rt-tr -even"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -4231,7 +4210,6 @@ Array [
               className="rt-tr -odd"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -4345,7 +4323,6 @@ Array [
               className="rt-tr -even"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -4459,7 +4436,6 @@ Array [
               className="rt-tr -odd"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -4573,7 +4549,6 @@ Array [
               className="rt-tr -even"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -4687,7 +4662,6 @@ Array [
               className="rt-tr -odd"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -4801,7 +4775,6 @@ Array [
               className="rt-tr -even"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -4915,7 +4888,6 @@ Array [
               className="rt-tr -odd"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -5029,7 +5001,6 @@ Array [
               className="rt-tr -even"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -5143,7 +5114,6 @@ Array [
               className="rt-tr -odd"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -5257,7 +5227,6 @@ Array [
               className="rt-tr -even"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -5371,7 +5340,6 @@ Array [
               className="rt-tr -odd"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -5485,7 +5453,6 @@ Array [
               className="rt-tr -even"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -5599,7 +5566,6 @@ Array [
               className="rt-tr -odd"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -5713,7 +5679,6 @@ Array [
               className="rt-tr -even"
               onClick={[Function]}
               role="row"
-              style={undefined}
             >
               <div
                 className="rt-td rt-expandable"
@@ -5826,7 +5791,6 @@ Array [
       >
         <div
           className="-pagination"
-          style={undefined}
         >
           <div
             className="-previous"
