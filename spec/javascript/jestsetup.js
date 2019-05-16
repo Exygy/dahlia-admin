@@ -12,4 +12,5 @@ global.shallow = shallow
 global.render = render
 global.mount = mount
 
+global.Promise = jest.requireActual('promise')
 global.wait = ms => new Promise((resolve, reject) => setTimeout(resolve, ms))
