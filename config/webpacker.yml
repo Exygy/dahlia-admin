@@ -39,7 +39,6 @@ development:
   dev_server:
     https: false
     host: localhost
-#192.168.0.50 #localhost
     port: 3065
     public: localhost:3065
     hmr: false
