@@ -6,6 +6,7 @@ class Api::V1::ListingsController < ApplicationController
 
   def create
     @listing = Listing.new(listing_params)
+    @listing.group = current_user.group
     @listing.save
 
     render json: { id: @listing.id }

@@ -1,18 +1,17 @@
 {
   "name": "sf-dahlia-lap",
   "private": true,
-  "engines": {
-    "node": "8.10.x",
-    "npm": "5.5.x",
-    "yarn": "1.x.x"
-  },
   "dependencies": {
-    "@rails/webpacker": "^3.0.2",
+    "@babel/core": "^7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-transform-async-to-generator": "^7.4",
+    "@babel/plugin-transform-runtime": "^7.4",
+    "@babel/preset-env": "^7.4",
+    "@babel/preset-react": "^7.0",
+    "@babel/runtime": "^7.4",
+    "@rails/webpacker": "^4.0.2",
     "axios": "^0.17.0",
-    "babel-core": "^6.26.2",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-root-import": "5.1.0",
-    "babel-preset-react": "^6.24.1",
+    "babel-plugin-root-import": "^6.2.0",
     "classnames": "^2.2.5",
     "coffeescript": "1.12.7",
     "final-form": "^4.12.0",
@@ -38,15 +37,13 @@
     "react-scrollable-anchor": "^0.6.1",
     "react-table": "^6.7.4",
     "turbolinks": "^5.0.3",
+    "webpack": "^4.5",
+    "webpack-cli": "^3.3.2",
     "webpacker-react": "^0.3.2"
   },
   "devDependencies": {
-    "babel-eslint": "7.2.3",
-    "babel-jest": "^22.4.3",
-    "babel-plugin-transform-async-to-generator": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-runtime": "^6.26.0",
+    "babel-eslint": "10.0.1",
+    "babel-jest": "^24.8.0",
     "caniuse-lite": "^1.0.30000760",
     "dotenv": "^6.0.0",
     "enzyme": "^3.3.0",
@@ -60,14 +57,19 @@
     "eslint-plugin-jest": "^21.22.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "7.4.0",
-    "jest": "^22.4.3",
+    "jest": "^24.8",
     "npm-run-all": "^4.1.5",
+    "postcss-preset-env": "^6.6.0",
     "react-test-renderer": "^16.3.2",
     "sinon": "^4.5.0",
     "snazzy": "^7.1.1",
     "standard": "^11.0.1",
-    "webpack": "3.8.1",
-    "webpack-dev-server": "^2.9.3"
+    "webpack-dev-server": "^3.3.1"
+  },
+  "engines": {
+    "node": "12.1.0",
+    "npm": "6.9.0",
+    "yarn": "1.x.x"
   },
   "scripts": {
     "lint:fix": "standard \"./**/*.js\" --fix | snazzy",

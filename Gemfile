@@ -7,7 +7,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.6.2'
+gem 'rails', '~> 5.2.3'
 # Set a minimum version for Rack to avoid security vulnerability in Rack <2.0.6
 gem 'rack', '>= 2.0.6'
 # Use Puma as the app server
@@ -39,7 +39,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'dotenv-rails', '~> 2.2'
+  gem 'dotenv-rails', '~> 2.7'
   gem 'pry-rails'
   gem 'binding_of_caller'
   # JW: Had to update this to 0.8.0+ upon Ruby 2.5.3 upgrade, explained:
@@ -91,7 +91,7 @@ gem "slim-rails", "~> 3.1"
 gem "hashie", "~> 3.5"
 
 # Added at 2017-10-29 23:29:10 -0700 by dkaplan:
-gem "webpacker", "~> 3.0"
+gem "webpacker", "~> 4.0"
 
 # Added at 2017-10-29 23:57:32 -0700 by dkaplan:
 gem "webpacker-react", "~> 0.3.2"
@@ -103,5 +103,4 @@ gem "pg", "~> 0.21.0"
 gem "pundit"
 
 # Added at 2019-04-23 11:05:00 -0700 by jwhite:
-gem "dahlia_data_models", :git => 'https://github.com/Exygy/dahlia_data_models.git', :ref => '1383c83'
-
+gem "dahlia_data_models", :git => 'https://github.com/Exygy/dahlia_data_models.git', :ref => '5090d7d'
