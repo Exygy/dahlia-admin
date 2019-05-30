@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_29_214303) do
+ActiveRecord::Schema.define(version: 2019_05_30_005534) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -119,6 +119,7 @@ ActiveRecord::Schema.define(version: 2019_05_29_214303) do
     t.bigint "group_id"
     t.boolean "show_unit_features"
     t.text "unit_amenities"
+    t.string "application_download_url"
     t.index ["group_id"], name: "index_listings_on_group_id"
   end
 
