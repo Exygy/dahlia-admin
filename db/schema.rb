@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_28_172812) do
+ActiveRecord::Schema.define(version: 2019_05_29_214303) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -122,6 +122,22 @@ ActiveRecord::Schema.define(version: 2019_05_28_172812) do
     t.index ["group_id"], name: "index_listings_on_group_id"
   end
 
+  create_table "preferences", force: :cascade do |t|
+    t.integer "available_units_count"
+    t.integer "available_units_percent"
+    t.text "description"
+    t.string "name"
+    t.integer "order"
+    t.string "pdf_url"
+    t.text "preference_proof_requirement_description"
+    t.string "read_more_url"
+    t.boolean "requires_proof"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "listing_id"
+    t.index ["listing_id"], name: "index_preferences_on_listing_id"
+  end
+
   create_table "units", force: :cascade do |t|
     t.decimal "ami_percentage", precision: 5, scale: 2
     t.decimal "bmr_annual_income_min", precision: 8, scale: 2
@@ -175,6 +191,7 @@ ActiveRecord::Schema.define(version: 2019_05_28_172812) do
 
   add_foreign_key "ami_charts", "groups"
   add_foreign_key "listings", "groups"
+  add_foreign_key "preferences", "listings"
   add_foreign_key "units", "ami_charts"
   add_foreign_key "units", "listings"
   add_foreign_key "users", "groups"
