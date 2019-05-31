@@ -23,7 +23,7 @@ const ListingFormSectionsGeneral = ({ listing }) => {
       <h3>Application</h3>
 
       <FormGroup>
-        <SimpleField fieldName='application_download_url' fieldLabel='Paper Download URL' validation={Required} />
+        <SimpleField fieldName='application_download_url' fieldLabel='Application Download URL' validation={Required} />
         <SimpleField fieldName='application_organization' fieldLabel='Organization' validation={Required} />
         <SimpleField fieldName='application_city' fieldLabel='City' validation={Required} />
         <SimpleField fieldName='application_phone' fieldLabel='Phone' validation={Required} />
