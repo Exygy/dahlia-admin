@@ -45,7 +45,6 @@ Rails.application.configure do
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # -- HTTPS required for Salesforce OAuth --
   config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
@@ -60,7 +59,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "sf-dahlia-lap_#{Rails.env}"
+  # config.active_job.queue_name_prefix = "dahlia-admin_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.

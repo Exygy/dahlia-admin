@@ -1,5 +1,5 @@
 {
-  "name": "sf-dahlia-lap",
+  "name": "dahlia-admin",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.4",

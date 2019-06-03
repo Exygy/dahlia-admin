@@ -1,13 +1,10 @@
 {
-  "name": "sf-dahlia-lap",
+  "name": "dahlia-admin",
   "env": {
     "DATABASE_URL": {
       "required": true
     },
     "LANG": {
-      "required": true
-    },
-    "PAPERTRAIL_API_TOKEN": {
       "required": true
     },
     "RACK_ENV": {
@@ -20,9 +17,6 @@
       "required": true
     },
     "RAILS_SERVE_STATIC_FILES": {
-      "required": true
-    },
-    "SECRET_KEY_BASE": {
       "required": true
     }
   },

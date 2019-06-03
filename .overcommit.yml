@@ -1,6 +1,6 @@
 verify_signatures: false
 
-# We ignore the following git hooks provided by overcommit for now
+# We ignore the following git hooks provided by Overcommit for now
 PostCheckout:
   ALL:
     enabled: false
@@ -8,7 +8,7 @@ CommitMsg:
   ALL:
     enabled: false
 
-# Custom options for DAHLIA LAP repository
+# Custom options for DAHLIA Admin repository
 PreCommit:
 
   BundleCheck:
@@ -40,7 +40,6 @@ PreCommit:
     enabled: true
     description: 'Checking for trailing whitespace'
     exclude:
-      - 'spec/vcr/**/*.yml'
       - 'spec/javascript/**/*.snap'
       - 'app/assets/**/*.svg'
       - 'public/**/*.svg'

@@ -49,7 +49,6 @@ group :development, :test do
   gem 'webmock'
   gem "pry-byebug", '~> 3.4.0'
   gem 'awesome_print'
-  gem 'vcr'
   gem 'rails-controller-testing'
   gem 'simplecov', require: false
 end
@@ -75,9 +74,6 @@ gem 'rails_12factor', group: :production
 
 # Updated at 2019-03-31 12:16:15 -0700 by jwhite:
 gem "devise", "~> 4.6.2"
-
-# Added at 2017-10-22 23:48:56 -0700 by dkaplan:
-gem "omniauth-salesforce", "~> 1.0"
 
 # Added at 2017-10-24 00:03:53 -0700 by dkaplan:
 gem "restforce", "~> 3.1"
