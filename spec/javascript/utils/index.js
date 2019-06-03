@@ -14,7 +14,6 @@ export const LISTING_FORM_NUMBERS_DASHES_FIELDS = [
   { name: 'building_zip_code', value: '11111' },
   { name: 'year_built', value: '1927' },
   { name: 'application_postal_code', value: '11111' },
-  { name: 'general_application_total', value: '100' },
   { name: 'reserved_community_minimum_age', value: '55' },
   { name: 'reserved_community_maximum_age', value: '65' },
   { name: 'deposit_min', value: '100' },

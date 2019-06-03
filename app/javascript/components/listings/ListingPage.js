@@ -19,16 +19,8 @@ const ListingPage = ({ listing }) => {
     action: [editListingButton(listing)]
   }
 
-  const tabs = {
-    items: [
-      { title: 'Listing Details', url: `/listings/${listing.id}` },
-      { title: 'Applications', url: `/listings/${listing.id}/applications` }
-    ],
-    currentUrl: window.location.pathname
-  }
-
   return (
-    <CardLayout pageHeader={pageHeader} tabSection={tabs}>
+    <CardLayout pageHeader={pageHeader}>
       <ListingDetails listing={listing} />
     </CardLayout>
   )

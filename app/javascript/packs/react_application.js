@@ -12,7 +12,7 @@ import './pattern_library'
 
 Turbolinks.start()
 
-WebpackerReact.setup({ ListingPage }) // ES6 shorthand for {ApplicationEditPage: ApplicationEditPage}
+WebpackerReact.setup({ ListingPage }) // ES6 shorthand for {ListingPage: ListingPage}
 WebpackerReact.setup({ ListingsPage })
 WebpackerReact.setup({ ListingForm })
 WebpackerReact.setup({ HomePage })

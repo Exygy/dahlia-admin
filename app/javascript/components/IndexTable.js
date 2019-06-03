@@ -5,7 +5,6 @@ import moment from 'moment'
 import ReactTable from 'react-table'
 import utils from '~/utils/utils'
 import IndexTableCell from './IndexTableCell'
-import appPaths from '~/utils/appPaths'
 
 class IndexTable extends React.Component {
   constructor (props) {
@@ -53,15 +52,11 @@ class IndexTable extends React.Component {
       } else {
         column.Header = utils.cleanField(field)
       }
-      // for Listings and Flagged/Duplicates Tab
+      // for Listings Tab
       if (column.Header === 'Name') {
         column.filterable = true
       }
       if (column.Header === 'Last Name') {
-        column.filterable = true
-      }
-      // for Applications Tab
-      if (column.Header === 'Application Number') {
         column.filterable = true
       }
       // TO DO: update when Mobx is implemented so no need to pass page
@@ -145,12 +140,6 @@ class IndexTable extends React.Component {
               href = `/listings/${originalId}`
             } else if (link === 'Edit Listing') {
               href = `/listings/${originalId}/edit`
-            } else if (link === 'Add Application' && row.original.Lottery_Status !== 'Lottery Complete') {
-              href = `/listings/${originalId}/applications/new`
-            } else if (link === 'View Application') {
-              href = `/applications/${originalId}`
-            } else if (link === 'View Flagged Applications') {
-              href = appPaths.toApplicationsFlagged(originalId)
             }
             if (href) {
               linkTags.push(
