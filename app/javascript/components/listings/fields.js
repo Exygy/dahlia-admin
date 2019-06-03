@@ -15,8 +15,8 @@ export const buildingInformationFields = [
   'description'
 ]
 
-export const lotteryPreferencesFields = [
-  { field: 'Lottery_Preference.Name', label: 'Name' },
+export const preferencesFields = [
+  { field: 'preference.name', label: 'Name' },
   'Description',
   { field: 'PDF_URL', label: 'PDF URL' },
   'Order',

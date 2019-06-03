@@ -6,9 +6,8 @@ import ListingDetailsContentTable from './ListingDetailsContentTable'
 import {
   detailsFields,
   buildingInformationFields,
-  lotteryPreferencesFields,
+  preferencesFields,
   aafFields,
-  lotteryInfoFields,
   appInfoFields,
   agentDevInfoFields,
   eligibilityRulesFields,
@@ -25,14 +24,13 @@ const ListingDetails = ({ listing }) => {
     <div>
       <Card title='Details' fields={detailsFields} />
       <Card title='Building Information' fields={buildingInformationFields} />
-      { !isEmpty(listing.listing_lottery_preferences) && (
+      { !isEmpty(listing.preferences) && (
         <Table title='Listing Preferences'
-          table='listing_lottery_preferences'
-          fields={lotteryPreferencesFields} />
+          table='listing_preferences'
+          fields={preferencesFields} />
       )
       }
       <Card title='Accessibility, Amenities, Fees' fields={aafFields} />
-      <Card title='Lottery Information' fields={lotteryInfoFields} />
       <Card title='Application Information' fields={appInfoFields} />
       <Card title='Leasing Agent and Developer Information' fields={agentDevInfoFields} />
       <Card title='Additional Eligibility Rules' fields={eligibilityRulesFields} />

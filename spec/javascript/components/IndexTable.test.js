@@ -11,12 +11,12 @@ describe('IndexTable', () => {
   ]
 
   const emptyResults = [
-    {first_name: undefined, last_name: undefined, lottery_date: undefined}
+    {first_name: undefined, last_name: undefined}
   ]
 
   const fields = { 'first_name': null, 'last_name': null }
 
-  const fieldsForEmptyResults = { 'first_name': null, 'last_name': null, 'lottery_date': null }
+  const fieldsForEmptyResults = { 'first_name': null, 'last_name': null }
 
   // Jest Snapshot
   test('should render IndexTable', () => {

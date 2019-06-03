@@ -9,10 +9,10 @@ import PageHeader from '../organisms/PageHeader'
 import ListingFormSectionsBuilding from './form/Building'
 import ListingFormSectionsFees from './form/Fees'
 import ListingFormSectionsGeneral from './form/General'
-import ListingFormSectionsLottery from './form/Lottery'
 import ListingFormSectionsPolicies from './form/Policies'
 import ListingFormSectionsRequirements from './form/Requirements'
 import ListingFormSectionsSenior from './form/Senior'
+import ListingFormSectionsWaitlist from './form/Waitlist'
 
 const onSubmit = async values => {
   let response = null
@@ -54,7 +54,7 @@ const ListingForm = ({ listing }) => {
             <div style={{height: '25px'}} />
             <div className={rowClass}>
               <div className={columnClass}>
-                <ListingFormSectionsLottery listing={listing} />
+                <ListingFormSectionsWaitlist listing={listing} />
               </div>
               <div className={columnClass}>
                 <ListingFormSectionsSenior listing={listing} />

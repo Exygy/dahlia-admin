@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { each, includes, last, uniqBy, map, sortBy } from 'lodash'
-import moment from 'moment'
 import ReactTable from 'react-table'
 import utils from '~/utils/utils'
 import IndexTableCell from './IndexTableCell'
@@ -28,11 +27,6 @@ class IndexTable extends React.Component {
         ),
         Cell: (cellInfo) => {
           let val = this.state.data[cellInfo.index][cellInfo.column.id]
-          if (cellInfo.column.Header === 'Lottery Date') {
-            // cheap way of knowing when to parse date fields
-            // only parse the date if the value is not undefined.
-            val = val ? moment(val).format('L') : undefined
-          }
           return <IndexTableCell {...{ attrs, val }} />
         },
         filterMethod: (filter, row) => {
@@ -76,12 +70,11 @@ class IndexTable extends React.Component {
           let i = 0
           let uniqListings = uniqBy(map(this.props.results, (result) => {
             return {
-              name: result['Listing.Name'] || result['listing_name'],
-              lotteryDate: moment(result['Listing.Lottery_Date'] || result['listing_lottery_date'])
+              name: result['Listing.Name'] || result['listing_name']
             }
           }), 'name')
           let sortedUniqListings = sortBy(uniqListings, (listing) => {
-            return listing.lotteryDate
+            return listing.name
           })
 
           each(sortedUniqListings, (listing) => {

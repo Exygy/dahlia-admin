@@ -20,6 +20,5 @@ export const LISTING_FORM_NUMBERS_DASHES_FIELDS = [
   { name: 'deposit_max', value: '3000' },
   { name: 'maximum_waitlist_size', value: '50' },
   { name: 'total_waitlist_openings', value: '50' },
-  { name: 'number_of_people_currently_on_waitlist', value: '0' },
-  { name: 'lottery_winners', value: '50' }
+  { name: 'number_of_people_currently_on_waitlist', value: '0' }
 ]
