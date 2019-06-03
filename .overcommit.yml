@@ -20,6 +20,10 @@ PreCommit:
     on_warn: fail
 
   # Enable explicitly each desired pre commit check
+  RailsBestPractices:
+    enabled: true
+    description: 'Checking Rails best practices'
+
   RuboCop:
     enabled: true
     description: 'Analyzing with Rubocop'
