@@ -1,8 +1,5 @@
 export const LISTING_FORM_REQUIRED_FIELDS = [
   { name: 'name', value: 'A Name' },
-  { name: 'application_organization', value: 'Organization' },
-  { name: 'application_city', value: 'City' },
-  { name: 'application_phone', value: '1234567890' },
   { name: 'building_name', value: 'Building Name' },
   { name: 'building_street_address', value: '123 Fake Street' },
   { name: 'building_city', value: 'Building City' },

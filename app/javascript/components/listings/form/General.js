@@ -23,10 +23,10 @@ const ListingFormSectionsGeneral = ({ listing }) => {
       <h3>Application</h3>
 
       <FormGroup>
-        <SimpleField fieldName='application_download_url' fieldLabel='Application Download URL' validation={Required} />
-        <SimpleField fieldName='application_organization' fieldLabel='Organization' validation={Required} />
-        <SimpleField fieldName='application_city' fieldLabel='City' validation={Required} />
-        <SimpleField fieldName='application_phone' fieldLabel='Phone' validation={Required} />
+        <SimpleField fieldName='application_download_url' fieldLabel='Application Download URL' />
+        <SimpleField fieldName='application_organization' fieldLabel='Organization' />
+        <SimpleField fieldName='application_city' fieldLabel='City' />
+        <SimpleField fieldName='application_phone' fieldLabel='Phone' />
         <SimpleField fieldName='application_postal_code' fieldLabel='Zip Code' validation={MustBeNumberOrDashes} />
         <Field component={SimpleDatePicker} name='application_due_date' label='Due Date' />
         <br />

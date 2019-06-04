@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :pattern_library, only: %w[index]
 
   # Devise routes
-  devise_for :users, controllers: { omniauth_callbacks: 'callbacks' }
+  devise_for :users
   as :user do
     root to: 'pages#home'
   end

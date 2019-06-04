@@ -453,21 +453,6 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
             TEST Property Manager
           </p>
         </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Building URL
-          </h4>
-          <a
-            href="https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg"
-            target="_blank"
-          >
-            https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg
-          </a>
-        </div>
       </div>
     </li>
   </ul>
@@ -504,18 +489,6 @@ exports[`ListingPage individual fields Details fields 1`] = `
             Automated Test Listing (please do not modify)
           </p>
         </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Application Due Date
-          </h4>
-          <p>
-            01/01/2021
-          </p>
-        </div>
       </div>
     </li>
     <li
@@ -530,10 +503,10 @@ exports[`ListingPage individual fields Details fields 1`] = `
           <h4
             className="t-sans t-small t-bold no-margin"
           >
-            Applications in Lottery
+            Application Due Date
           </h4>
           <p>
-            true
+            01/01/2021
           </p>
         </div>
       </div>
@@ -567,110 +540,6 @@ exports[`ListingPage individual fields Leasing Agent and Developer Information f
       <div
         className="content-card"
       />
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`ListingPage individual fields Lottery Information fields 1`] = `
-<div
-  className="content-card padding-bottom-none margin-bottom--half bg-trans"
->
-  <h4
-    className="content-card_title t-serif"
-  >
-    Lottery Information
-  </h4>
-  <ul
-    className="content-grid"
-  >
-    <li
-      className="content-item"
-    >
-      <div
-        className="content-card"
-      >
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Lottery Date
-          </h4>
-          <p>
-            03/22/2017
-          </p>
-        </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Lottery Results Date
-          </h4>
-          <p>
-            03/23/2017
-          </p>
-        </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Lottery Venue
-          </h4>
-          <p>
-            MOHCD
-          </p>
-        </div>
-      </div>
-    </li>
-    <li
-      className="content-item"
-    >
-      <div
-        className="content-card"
-      >
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Lottery Status
-          </h4>
-          <p>
-            Not Yet Run
-          </p>
-        </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Lottery Street Address
-          </h4>
-          <p>
-            1 S. Van Ness Avenue 5th FL
-          </p>
-        </div>
-        <div
-          className="margin-bottom--half"
-        >
-          <h4
-            className="t-sans t-small t-bold no-margin"
-          >
-            Lottery City
-          </h4>
-          <p>
-            San Francisco
-          </p>
-        </div>
-      </div>
     </li>
   </ul>
 </div>
@@ -716,47 +585,8 @@ Array [
       </div>
     </div>
   </header>,
-  <div
-    className="tabs-section tabs-row row full-width inner--3x bg-snow"
-  >
-    <ul
-      className="tabs full-width-small-only"
-      role="menubar"
-    >
-      <li
-        className="tab-title"
-        role="none"
-      >
-        <a
-          aria-selected={false}
-          href="/listings/0"
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          role="menuitem"
-          tabIndex="0"
-        >
-          Listing Details
-        </a>
-      </li>
-      <li
-        className="tab-title"
-        role="none"
-      >
-        <a
-          aria-selected={false}
-          href="/listings/0/applications"
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          role="menuitem"
-          tabIndex="0"
-        >
-          Applications
-        </a>
-      </li>
-    </ul>
-  </div>,
   <section
-    className="tabs-card-row row full-width inner--3x margin-bottom--2x"
+    className="tabs-card-row row full-width inner--3x margin-bottom--2x padding-top--2x"
   >
     <div
       className="app-card form-card tabs-card max-width expand-on-small"
@@ -791,18 +621,6 @@ Array [
                     Automated Test Listing (please do not modify)
                   </p>
                 </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Application Due Date
-                  </h4>
-                  <p>
-                    01/01/2021
-                  </p>
-                </div>
               </div>
             </li>
             <li
@@ -817,10 +635,10 @@ Array [
                   <h4
                     className="t-sans t-small t-bold no-margin"
                   >
-                    Applications in Lottery
+                    Application Due Date
                   </h4>
                   <p>
-                    true
+                    01/01/2021
                   </p>
                 </div>
               </div>
@@ -924,21 +742,6 @@ Array [
                     TEST Property Manager
                   </p>
                 </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Building URL
-                  </h4>
-                  <a
-                    href="https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg"
-                    target="_blank"
-                  >
-                    https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg
-                  </a>
-                </div>
               </div>
             </li>
           </ul>
@@ -1032,107 +835,6 @@ For pet fees:  Cat is allowed with a $500 refundable deposit, $250 non-refundabl
 Dogs are not allowed in the building.  
 
 One parking space per unit available for $175 a month.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div
-          className="content-card padding-bottom-none margin-bottom--half bg-trans"
-        >
-          <h4
-            className="content-card_title t-serif"
-          >
-            Lottery Information
-          </h4>
-          <ul
-            className="content-grid"
-          >
-            <li
-              className="content-item"
-            >
-              <div
-                className="content-card"
-              >
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Lottery Date
-                  </h4>
-                  <p>
-                    03/22/2017
-                  </p>
-                </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Lottery Results Date
-                  </h4>
-                  <p>
-                    03/23/2017
-                  </p>
-                </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Lottery Venue
-                  </h4>
-                  <p>
-                    MOHCD
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="content-item"
-            >
-              <div
-                className="content-card"
-              >
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Lottery Status
-                  </h4>
-                  <p>
-                    Not Yet Run
-                  </p>
-                </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Lottery Street Address
-                  </h4>
-                  <p>
-                    1 S. Van Ness Avenue 5th FL
-                  </p>
-                </div>
-                <div
-                  className="margin-bottom--half"
-                >
-                  <h4
-                    className="t-sans t-small t-bold no-margin"
-                  >
-                    Lottery City
-                  </h4>
-                  <p>
-                    San Francisco
                   </p>
                 </div>
               </div>
