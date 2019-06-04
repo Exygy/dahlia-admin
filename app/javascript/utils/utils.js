@@ -1,7 +1,7 @@
 import { isString, map, mapValues, propertyOf } from 'lodash'
 
 // FIXME Rename to a more useful filename.
-export const SALESFORCE_DATE_FORMAT = 'YYYY-MM-DDTHH:mm:ss.SSSZZ'
+export const DATE_FORMAT = 'YYYY-MM-DDTHH:mm:ss.SSSZZ'
 
 export const API_DATE_FORMAT = 'YYYY-MM-DD'
 

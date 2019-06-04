@@ -42,28 +42,6 @@ To lint the React code run: `yarn lint`
 
 `bundle exec rake spec`
 
-**Updating VCR Cassettes**
-
-If the Salesforce API changes for a request, or if the data sent to the API for a request has changed, you have to update the VCR cassettes affected. Cassettes are YAML files located in the `app/spec/vcr/` directory.
-
-In order to update the cassettes you have to:
-
-* Go to your failing test.
-* Locate the instruction that is creating the cassette with `VCR.use_cassette`.
-* Remove the cassette specified from `app/spec/vcr/`
-
-For example, for:
-```
-VCR.use_cassette('listings/applications_controller/index') do
-```
-
-You have to remove:
-```
-app/spec/vcr/listings/applications_controller/index.yml
-```
-
-Then re-run your test. **Be aware that now that request in your test will actually be run.** A new cassette will be automatically generated recording that new run of the request, and then subsequent runs of the test will use that recorded cassette for the request.
-
 ## React/Javascript tests
 
 ### Running unit tests

@@ -41,7 +41,6 @@ import ContentSectionWrapper from 'components/pattern_library/wrappers/ContentSe
 import DropdownWrapper from 'components/pattern_library/wrappers/DropdownWrapper'
 import ExpandableTableWrapper from 'components/pattern_library/wrappers/ExpandableTableWrapper'
 import ModalWrapper from 'components/pattern_library/wrappers/ModalWrapper'
-import StatusUpdateWrapper from 'components/pattern_library/wrappers/StatusUpdateWrapper'
 import TabCardWrapper from 'components/pattern_library/wrappers/TabCardWrapper'
 
 Turbolinks.start()
@@ -86,5 +85,4 @@ WebpackerReact.setup({ ContentSectionWrapper })
 WebpackerReact.setup({ DropdownWrapper })
 WebpackerReact.setup({ ExpandableTableWrapper })
 WebpackerReact.setup({ ModalWrapper })
-WebpackerReact.setup({ StatusUpdateWrapper })
 WebpackerReact.setup({ TabCardWrapper })

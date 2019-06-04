@@ -252,20 +252,6 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
 
-  omniauth_dynamic_setup = (lambda do |env|
-    if env['REQUEST_URI'].include?('admin=true')
-      env['omniauth.strategy'].options[:client_options][:site] = ENV['SALESFORCE_INSTANCE_URL']
-    else
-      env['omniauth.strategy'].options[:client_options][:site] = ENV['COMMUNITY_LOGIN_URL']
-    end
-  end)
-
-  if ENV['production']
-    config.omniauth :salesforce, ENV['SALESFORCE_CLIENT_ID'], ENV['SALESFORCE_CLIENT_SECRET'], client_options: { site: ENV['COMMUNITY_LOGIN_URL']}, setup: omniauth_dynamic_setup
-  else
-    config.omniauth :salesforcesandbox, ENV['SALESFORCE_CLIENT_ID'], ENV['SALESFORCE_CLIENT_SECRET'], strategy_class: OmniAuth::Strategies::SalesforceSandbox, setup: omniauth_dynamic_setup
-  end
-
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.

@@ -1,9 +1,6 @@
 export const detailsFields = [
   'name',
-  'application_due_date',
-  { field: 'in_lottery', label: 'Applications in Lottery' },
-  'lottery_winners',
-  'lottery_results'
+  'application_due_date'
 ]
 
 export const buildingInformationFields = [
@@ -14,13 +11,12 @@ export const buildingInformationFields = [
   'building_zip_code',
   'neighborhood',
   'developer',
-  { field: 'building_url', label: 'Building URL' },
   'year_built',
   'description'
 ]
 
-export const lotteryPreferencesFields = [
-  { field: 'Lottery_Preference.Name', label: 'Name' },
+export const preferencesFields = [
+  { field: 'preference.name', label: 'Name' },
   'Description',
   { field: 'PDF_URL', label: 'PDF URL' },
   'Order',
@@ -34,15 +30,6 @@ export const aafFields = [
   'deposit_min',
   'deposit_max',
   'costs_not_included'
-]
-
-export const lotteryInfoFields = [
-  'lottery_date',
-  'lottery_results_date',
-  'lottery_venue',
-  'lottery_status',
-  'lottery_street_address',
-  'lottery_city'
 ]
 
 export const appInfoFields = [

@@ -1,6 +1,6 @@
 verify_signatures: false
 
-# We ignore the following git hooks provided by overcommit for now
+# We ignore the following git hooks provided by Overcommit for now
 PostCheckout:
   ALL:
     enabled: false
@@ -8,7 +8,7 @@ CommitMsg:
   ALL:
     enabled: false
 
-# Custom options for DAHLIA LAP repository
+# Custom options for DAHLIA Admin repository
 PreCommit:
 
   BundleCheck:
@@ -20,6 +20,10 @@ PreCommit:
     on_warn: fail
 
   # Enable explicitly each desired pre commit check
+  RailsBestPractices:
+    enabled: true
+    description: 'Checking Rails best practices'
+
   RuboCop:
     enabled: true
     description: 'Analyzing with Rubocop'
@@ -40,7 +44,6 @@ PreCommit:
     enabled: true
     description: 'Checking for trailing whitespace'
     exclude:
-      - 'spec/vcr/**/*.yml'
       - 'spec/javascript/**/*.snap'
       - 'app/assets/**/*.svg'
       - 'public/**/*.svg'

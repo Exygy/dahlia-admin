@@ -1,11 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { each, includes, last, uniqBy, map, sortBy } from 'lodash'
-import moment from 'moment'
 import ReactTable from 'react-table'
 import utils from '~/utils/utils'
 import IndexTableCell from './IndexTableCell'
-import appPaths from '~/utils/appPaths'
 
 class IndexTable extends React.Component {
   constructor (props) {
@@ -29,11 +27,6 @@ class IndexTable extends React.Component {
         ),
         Cell: (cellInfo) => {
           let val = this.state.data[cellInfo.index][cellInfo.column.id]
-          if (cellInfo.column.Header === 'Lottery Date') {
-            // cheap way of knowing when to parse date fields
-            // only parse the date if the value is not undefined.
-            val = val ? moment(val).format('L') : undefined
-          }
           return <IndexTableCell {...{ attrs, val }} />
         },
         filterMethod: (filter, row) => {
@@ -53,15 +46,11 @@ class IndexTable extends React.Component {
       } else {
         column.Header = utils.cleanField(field)
       }
-      // for Listings and Flagged/Duplicates Tab
+      // for Listings Tab
       if (column.Header === 'Name') {
         column.filterable = true
       }
       if (column.Header === 'Last Name') {
-        column.filterable = true
-      }
-      // for Applications Tab
-      if (column.Header === 'Application Number') {
         column.filterable = true
       }
       // TO DO: update when Mobx is implemented so no need to pass page
@@ -81,12 +70,11 @@ class IndexTable extends React.Component {
           let i = 0
           let uniqListings = uniqBy(map(this.props.results, (result) => {
             return {
-              name: result['Listing.Name'] || result['listing_name'],
-              lotteryDate: moment(result['Listing.Lottery_Date'] || result['listing_lottery_date'])
+              name: result['Listing.Name'] || result['listing_name']
             }
           }), 'name')
           let sortedUniqListings = sortBy(uniqListings, (listing) => {
-            return listing.lotteryDate
+            return listing.name
           })
 
           each(sortedUniqListings, (listing) => {
@@ -145,12 +133,6 @@ class IndexTable extends React.Component {
               href = `/listings/${originalId}`
             } else if (link === 'Edit Listing') {
               href = `/listings/${originalId}/edit`
-            } else if (link === 'Add Application' && row.original.Lottery_Status !== 'Lottery Complete') {
-              href = `/listings/${originalId}/applications/new`
-            } else if (link === 'View Application') {
-              href = `/applications/${originalId}`
-            } else if (link === 'View Flagged Applications') {
-              href = appPaths.toApplicationsFlagged(originalId)
             }
             if (href) {
               linkTags.push(

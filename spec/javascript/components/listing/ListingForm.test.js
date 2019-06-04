@@ -7,7 +7,7 @@ import ListingForm from 'components/listings/ListingForm'
 import { testRequired, testNumbersOrDashes } from './utils'
 import { LISTING_FORM_REQUIRED_FIELDS, LISTING_FORM_NUMBERS_DASHES_FIELDS } from '../../utils'
 
-describe.only('ListingForm', () => {
+describe('ListingForm', () => {
   describe('should validate fields correctly: ', () => {
     beforeEach(() => {
       listing.name = ''

@@ -12,23 +12,6 @@ const tableFields = {
   'application_due_date': {
     'type': 'date',
     'label': 'Application Due Date'
-  },
-  'lottery_date': {
-    'type': 'date',
-    'label': 'Lottery Date'
-  },
-  'lottery_results_date': {
-    'type': 'date',
-    'label': 'Lottery Results Date'
-  },
-  'lottery_status': {
-    'label': 'Lottery Status'
-  },
-  'nflagged_applications': {
-    'label': 'Flagged Applications'
-  },
-  'in_lottery': {
-    'label': 'Applications In Lottery'
   }
 }
 
