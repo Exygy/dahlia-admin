@@ -46,9 +46,6 @@ describe('Listings', () => {
     expect(pageTitle).toBe('New Listing')
     // Promise.all does not work when typing simultaneously apparently
     await page.type('#form-name', 'A Name')
-    await page.type('#form-application_organization', 'An Organization')
-    await page.type('#form-application_city', 'City')
-    await page.type('#form-application_phone', '1234567890')
     await page.type('#form-building_name', 'A Name')
     await page.type('#form-building_street_address', 'An Address')
     await page.type('#form-building_city', 'City')
@@ -103,9 +100,6 @@ describe('Listings', () => {
 
     // Promise.all does not work when typing simultaneously apparently
     await enterValue(page, '#form-name', 'An Updated Name')
-    await enterValue(page, '#form-application_organization', 'An Updated Organization')
-    await enterValue(page, '#form-application_city', 'Updated City')
-    await enterValue(page, '#form-application_phone', '0123456789')
     await enterValue(page, '#form-building_name', 'An Updated Name')
     await enterValue(page, '#form-building_street_address', 'An Updated Address')
     await enterValue(page, '#form-building_city', 'Updated City')
@@ -116,7 +110,7 @@ describe('Listings', () => {
     await page.waitFor(2000)
 
     pageTitle = await page.$eval('h1.lead-header_title', e => e.innerHTML)
-    expect(pageTitle).toBe('Edit Listing')
+    expect(pageTitle).toContain('An Updated Name')
 
     await browser.close()
   }, 16000)
