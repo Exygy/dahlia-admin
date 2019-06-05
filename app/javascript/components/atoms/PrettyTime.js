@@ -12,7 +12,7 @@ const getDisplayFormat = (type) => {
 
 const PrettyTime = ({ time, parseFormat = '', displayType }) => {
   const displayFormat = getDisplayFormat(displayType)
-  return <div>{moment(time, parseFormat).format(displayFormat)}</div>
+  return <div>{moment(time, parseFormat, true).format(displayFormat)}</div>
 }
 
 export default PrettyTime
