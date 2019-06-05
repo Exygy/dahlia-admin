@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_03_185823) do
+ActiveRecord::Schema.define(version: 2019_06_05_234515) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2019_06_03_185823) do
     t.integer "year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "group_id"
+    t.integer "group_id"
     t.index ["chart_type", "year", "group_id"], name: "index_ami_charts_on_chart_type_and_year_and_group_id", unique: true
     t.index ["group_id"], name: "index_ami_charts_on_group_id"
   end
@@ -42,14 +42,6 @@ ActiveRecord::Schema.define(version: 2019_06_03_185823) do
     t.index ["lft"], name: "index_groups_on_lft"
     t.index ["parent_id"], name: "index_groups_on_parent_id"
     t.index ["rgt"], name: "index_groups_on_rgt"
-  end
-
-  create_table "listing_images", force: :cascade do |t|
-    t.bigint "listing_id"
-    t.string "image_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["listing_id"], name: "index_listing_images_on_listing_id"
   end
 
   create_table "listings", force: :cascade do |t|
@@ -94,7 +86,7 @@ ActiveRecord::Schema.define(version: 2019_06_03_185823) do
     t.integer "year_built"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "group_id"
+    t.integer "group_id"
     t.boolean "hide_unit_features", default: false, null: false
     t.text "unit_amenities"
     t.string "application_download_url"
@@ -125,7 +117,7 @@ ActiveRecord::Schema.define(version: 2019_06_03_185823) do
     t.boolean "requires_proof", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "listing_id"
+    t.integer "listing_id"
     t.index ["listing_id"], name: "index_preferences_on_listing_id"
   end
 
@@ -133,23 +125,23 @@ ActiveRecord::Schema.define(version: 2019_06_03_185823) do
     t.decimal "ami_percentage", precision: 5, scale: 2
     t.decimal "annual_income_min", precision: 8, scale: 2
     t.decimal "monthly_income_min", precision: 8, scale: 2
+    t.integer "floor"
     t.decimal "annual_income_max", precision: 8, scale: 2
     t.integer "max_occupancy"
     t.integer "min_occupancy"
     t.decimal "monthly_rent", precision: 8, scale: 2
     t.integer "num_bathrooms"
     t.integer "num_bedrooms"
+    t.string "number"
     t.integer "priority_type"
     t.integer "reserved_type"
-    t.integer "status"
-    t.integer "floor"
-    t.string "number"
     t.integer "sq_ft"
+    t.integer "status"
     t.integer "unit_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "listing_id"
-    t.bigint "ami_chart_id"
+    t.integer "listing_id"
+    t.integer "ami_chart_id"
     t.integer "monthly_rent_as_percent_of_income"
     t.index ["ami_chart_id"], name: "index_units_on_ami_chart_id"
     t.index ["listing_id"], name: "index_units_on_listing_id"
@@ -174,16 +166,8 @@ ActiveRecord::Schema.define(version: 2019_06_03_185823) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.integer "role"
-    t.bigint "group_id"
     t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["group_id"], name: "index_users_on_group_id"
     t.index ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true
   end
 
-  add_foreign_key "ami_charts", "groups"
-  add_foreign_key "listings", "groups"
-  add_foreign_key "preferences", "listings"
-  add_foreign_key "units", "ami_charts"
-  add_foreign_key "units", "listings"
-  add_foreign_key "users", "groups"
 end
