@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_03_183531) do
+ActiveRecord::Schema.define(version: 2019_06_03_185823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -95,7 +95,7 @@ ActiveRecord::Schema.define(version: 2019_06_03_183531) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "group_id"
-    t.boolean "show_unit_features"
+    t.boolean "hide_unit_features", default: false, null: false
     t.text "unit_amenities"
     t.string "application_download_url"
     t.decimal "application_fee", precision: 5, scale: 2
@@ -122,7 +122,7 @@ ActiveRecord::Schema.define(version: 2019_06_03_183531) do
     t.string "pdf_url"
     t.text "preference_proof_requirement_description"
     t.string "read_more_url"
-    t.boolean "requires_proof"
+    t.boolean "requires_proof", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "listing_id"

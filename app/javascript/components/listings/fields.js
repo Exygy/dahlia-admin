@@ -51,13 +51,13 @@ export const agentDevInfoFields = [
 
 export const eligibilityRulesFields = [
   'building_selection_criteria',
-  'credit_rating'
+  'credit_history'
 ]
 
 export const additionalInfoFields = [
   'required_documents',
   'smoking_policy',
-  { field: 'legal_disclaimers', renderType: 'html' },
+  { field: 'program_rules', renderType: 'html' },
   'pet_policy',
   'unit_amenities'
 ]

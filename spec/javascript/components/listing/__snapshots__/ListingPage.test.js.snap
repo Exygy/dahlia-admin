@@ -59,7 +59,7 @@ exports[`ListingPage individual fields Accessibility, Amenities, Fees fields 1`]
             Deposit Min
           </h4>
           <p>
-            2102.0
+            2102
           </p>
         </div>
         <div
@@ -71,7 +71,7 @@ exports[`ListingPage individual fields Accessibility, Amenities, Fees fields 1`]
             Deposit Max
           </h4>
           <p>
-            2355.0
+            2355
           </p>
         </div>
         <div
@@ -145,7 +145,7 @@ exports[`ListingPage individual fields Additional Eligibility Rules fields 1`] =
           <h4
             className="t-sans t-small t-bold no-margin"
           >
-            Credit Rating
+            Credit History
           </h4>
           <p>
             Provide a credit report with score from Equifax, Experian, or TransUnion dated within thirty (30) days of the application. 
@@ -206,7 +206,7 @@ exports[`ListingPage individual fields Additional Information fields 1`] = `
             Smoking Policy
           </h4>
           <p>
-            Non-smoking building
+            Non-Smoking Building
           </p>
         </div>
       </div>
@@ -223,12 +223,12 @@ exports[`ListingPage individual fields Additional Information fields 1`] = `
           <h4
             className="t-sans t-small t-bold no-margin"
           >
-            Legal Disclaimers
+            Program Rules
           </h4>
           <p
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>All BMR renters must review and acknowledge the </span></span><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'> that governs this property upon the signing of a lease for a BMR unit. </span></span><br> <br><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>Applicants should be informed that BMR rental units in some buildings may convert to ownership units in the future.  In the case of conversion, BMR renters will be afforded certain rights as explained in the </span></span><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>. Applicants should inquire with the building contact person listed above to determine if the building has a minimum number of years that it must remain a rental building.  (Some buildings may have such restrictions based on government sources of financing for their building.) Most buildings may have no restrictions on conversion at all. </span></span><br> <br><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>It is also important to note that units governed by the Inclusionary Housing Program are NOT governed by the San Francisco Rent Ordinance (also known as “rent control”). Among other rules, rents may increase beyond increases allowed under “rent control.”  Please see the </span></span><span style='font-size: 12pt;'><span style='font-family: times new roman,serif;'><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a></span></span><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'> for more information. </span></span>",
+                "__html": "<span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\">All BMR renters must review and acknowledge the </span></span><a href=\\"http://sf-moh.org/index.aspx?page=295\\" target=\\"_blank\\"><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\"><span style=\\"color: rgb(0, 0, 255);\\">Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\"> that governs this property upon the signing of a lease for a BMR unit. </span></span><br> <br><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\">Applicants should be informed that BMR rental units in some buildings may convert to ownership units in the future.  In the case of conversion, BMR renters will be afforded certain rights as explained in the </span></span><a href=\\"http://sf-moh.org/index.aspx?page=295\\" target=\\"_blank\\"><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\"><span style=\\"color: rgb(0, 0, 255);\\">Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\">. Applicants should inquire with the building contact person listed above to determine if the building has a minimum number of years that it must remain a rental building.  (Some buildings may have such restrictions based on government sources of financing for their building.) Most buildings may have no restrictions on conversion at all. </span></span><br> <br><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\">It is also important to note that units governed by the Inclusionary Housing Program are NOT governed by the San Francisco Rent Ordinance (also known as “rent control”). Among other rules, rents may increase beyond increases allowed under “rent control.”  Please see the </span></span><span style=\\"font-size: 12pt;\\"><span style=\\"font-family: times new roman,serif;\\"><a href=\\"http://sf-moh.org/index.aspx?page=295\\" target=\\"_blank\\"><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\"><span style=\\"color: rgb(0, 0, 255);\\">Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a></span></span><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\"> for more information. </span></span>",
               }
             }
           />
@@ -278,7 +278,7 @@ exports[`ListingPage individual fields Application Information fields 1`] = `
             Application Phone
           </h4>
           <p>
-            (415) 227-2256
+            (415) 123-4567
           </p>
         </div>
         <div
@@ -290,7 +290,7 @@ exports[`ListingPage individual fields Application Information fields 1`] = `
             Application Organization
           </h4>
           <p>
-            280 Fell-BMR
+            Automated Test Listing
           </p>
         </div>
         <div
@@ -302,7 +302,7 @@ exports[`ListingPage individual fields Application Information fields 1`] = `
             Application Street Address
           </h4>
           <p>
-            P.O. Box 420847
+            P.O. Box 123456
           </p>
         </div>
       </div>
@@ -382,7 +382,7 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
             Building Name
           </h4>
           <p>
-            Automated Test Building
+            Automated Test Listing
           </p>
         </div>
         <div
@@ -394,7 +394,7 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
             Building Street Address
           </h4>
           <p>
-            2601 Mission St
+            123 Main St
           </p>
         </div>
         <div
@@ -435,10 +435,22 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
           <h4
             className="t-sans t-small t-bold no-margin"
           >
+            Building Zip Code
+          </h4>
+          <p>
+            94142
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
             Neighborhood
           </h4>
           <p>
-            Hayes Valley
+            SOMA
           </p>
         </div>
         <div
@@ -450,7 +462,19 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
             Developer
           </h4>
           <p>
-            TEST Property Manager
+            Test Property Manager
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Year Built
+          </h4>
+          <p>
+            2009
           </p>
         </div>
       </div>
@@ -486,7 +510,7 @@ exports[`ListingPage individual fields Details fields 1`] = `
             Name
           </h4>
           <p>
-            Automated Test Listing (please do not modify)
+            Automated Test Listing
           </p>
         </div>
       </div>
@@ -506,7 +530,7 @@ exports[`ListingPage individual fields Details fields 1`] = `
             Application Due Date
           </h4>
           <p>
-            01/01/2021
+            12/31/2020
           </p>
         </div>
       </div>
@@ -532,20 +556,70 @@ exports[`ListingPage individual fields Leasing Agent and Developer Information f
     >
       <div
         className="content-card"
-      />
+      >
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Leasing Agent Name
+          </h4>
+          <p>
+            John Doe
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Leasing Agent Title
+          </h4>
+          <p>
+            Leasing Agent
+          </p>
+        </div>
+      </div>
     </li>
     <li
       className="content-item"
     >
       <div
         className="content-card"
-      />
+      >
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Leasing Agent Email
+          </h4>
+          <p>
+            johndoe@testleasingagent.com
+          </p>
+        </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Leasing Agent Phone
+          </h4>
+          <p>
+            (415) 123-4567
+          </p>
+        </div>
+      </div>
     </li>
   </ul>
 </div>
 `;
 
-exports[`ListingPage should render succesfully 1`] = `
+exports[`ListingPage should render successfully 1`] = `
 Array [
   <header
     className="lead-header short  bg-snow"
@@ -562,7 +636,7 @@ Array [
           <h1
             className="lead-header_title small-serif c-oil"
           >
-            Automated Test Listing (please do not modify)
+            Automated Test Listing
           </h1>
           <div
             className="medium-8 columns no-padding"
@@ -618,7 +692,7 @@ Array [
                     Name
                   </h4>
                   <p>
-                    Automated Test Listing (please do not modify)
+                    Automated Test Listing
                   </p>
                 </div>
               </div>
@@ -638,7 +712,7 @@ Array [
                     Application Due Date
                   </h4>
                   <p>
-                    01/01/2021
+                    12/31/2020
                   </p>
                 </div>
               </div>
@@ -671,7 +745,7 @@ Array [
                     Building Name
                   </h4>
                   <p>
-                    Automated Test Building
+                    Automated Test Listing
                   </p>
                 </div>
                 <div
@@ -683,7 +757,7 @@ Array [
                     Building Street Address
                   </h4>
                   <p>
-                    2601 Mission St
+                    123 Main St
                   </p>
                 </div>
                 <div
@@ -724,10 +798,22 @@ Array [
                   <h4
                     className="t-sans t-small t-bold no-margin"
                   >
+                    Building Zip Code
+                  </h4>
+                  <p>
+                    94142
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
                     Neighborhood
                   </h4>
                   <p>
-                    Hayes Valley
+                    SOMA
                   </p>
                 </div>
                 <div
@@ -739,7 +825,19 @@ Array [
                     Developer
                   </h4>
                   <p>
-                    TEST Property Manager
+                    Test Property Manager
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Year Built
+                  </h4>
+                  <p>
+                    2009
                   </p>
                 </div>
               </div>
@@ -804,7 +902,7 @@ Array [
                     Deposit Min
                   </h4>
                   <p>
-                    2102.0
+                    2102
                   </p>
                 </div>
                 <div
@@ -816,7 +914,7 @@ Array [
                     Deposit Max
                   </h4>
                   <p>
-                    2355.0
+                    2355
                   </p>
                 </div>
                 <div
@@ -867,7 +965,7 @@ One parking space per unit available for $175 a month.
                     Application Phone
                   </h4>
                   <p>
-                    (415) 227-2256
+                    (415) 123-4567
                   </p>
                 </div>
                 <div
@@ -879,7 +977,7 @@ One parking space per unit available for $175 a month.
                     Application Organization
                   </h4>
                   <p>
-                    280 Fell-BMR
+                    Automated Test Listing
                   </p>
                 </div>
                 <div
@@ -891,7 +989,7 @@ One parking space per unit available for $175 a month.
                     Application Street Address
                   </h4>
                   <p>
-                    P.O. Box 420847
+                    P.O. Box 123456
                   </p>
                 </div>
               </div>
@@ -958,14 +1056,64 @@ One parking space per unit available for $175 a month.
             >
               <div
                 className="content-card"
-              />
+              >
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Leasing Agent Name
+                  </h4>
+                  <p>
+                    John Doe
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Leasing Agent Title
+                  </h4>
+                  <p>
+                    Leasing Agent
+                  </p>
+                </div>
+              </div>
             </li>
             <li
               className="content-item"
             >
               <div
                 className="content-card"
-              />
+              >
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Leasing Agent Email
+                  </h4>
+                  <p>
+                    johndoe@testleasingagent.com
+                  </p>
+                </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Leasing Agent Phone
+                  </h4>
+                  <p>
+                    (415) 123-4567
+                  </p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -1015,7 +1163,7 @@ One parking space per unit available for $175 a month.
                   <h4
                     className="t-sans t-small t-bold no-margin"
                   >
-                    Credit Rating
+                    Credit History
                   </h4>
                   <p>
                     Provide a credit report with score from Equifax, Experian, or TransUnion dated within thirty (30) days of the application. 
@@ -1073,7 +1221,7 @@ Mitigating circumstances may be considered.
                     Smoking Policy
                   </h4>
                   <p>
-                    Non-smoking building
+                    Non-Smoking Building
                   </p>
                 </div>
               </div>
@@ -1090,12 +1238,12 @@ Mitigating circumstances may be considered.
                   <h4
                     className="t-sans t-small t-bold no-margin"
                   >
-                    Legal Disclaimers
+                    Program Rules
                   </h4>
                   <p
                     dangerouslySetInnerHTML={
                       Object {
-                        "__html": "<span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>All BMR renters must review and acknowledge the </span></span><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'> that governs this property upon the signing of a lease for a BMR unit. </span></span><br> <br><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>Applicants should be informed that BMR rental units in some buildings may convert to ownership units in the future.  In the case of conversion, BMR renters will be afforded certain rights as explained in the </span></span><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>. Applicants should inquire with the building contact person listed above to determine if the building has a minimum number of years that it must remain a rental building.  (Some buildings may have such restrictions based on government sources of financing for their building.) Most buildings may have no restrictions on conversion at all. </span></span><br> <br><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'>It is also important to note that units governed by the Inclusionary Housing Program are NOT governed by the San Francisco Rent Ordinance (also known as “rent control”). Among other rules, rents may increase beyond increases allowed under “rent control.”  Please see the </span></span><span style='font-size: 12pt;'><span style='font-family: times new roman,serif;'><a href='http://sf-moh.org/index.aspx?page=295' target='_blank'><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'><span style='color: rgb(0, 0, 255);'>Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a></span></span><span style='font-size: 10pt;'><span style='font-family: arial,sans-serif;'> for more information. </span></span>",
+                        "__html": "<span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\">All BMR renters must review and acknowledge the </span></span><a href=\\"http://sf-moh.org/index.aspx?page=295\\" target=\\"_blank\\"><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\"><span style=\\"color: rgb(0, 0, 255);\\">Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\"> that governs this property upon the signing of a lease for a BMR unit. </span></span><br> <br><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\">Applicants should be informed that BMR rental units in some buildings may convert to ownership units in the future.  In the case of conversion, BMR renters will be afforded certain rights as explained in the </span></span><a href=\\"http://sf-moh.org/index.aspx?page=295\\" target=\\"_blank\\"><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\"><span style=\\"color: rgb(0, 0, 255);\\">Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\">. Applicants should inquire with the building contact person listed above to determine if the building has a minimum number of years that it must remain a rental building.  (Some buildings may have such restrictions based on government sources of financing for their building.) Most buildings may have no restrictions on conversion at all. </span></span><br> <br><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\">It is also important to note that units governed by the Inclusionary Housing Program are NOT governed by the San Francisco Rent Ordinance (also known as “rent control”). Among other rules, rents may increase beyond increases allowed under “rent control.”  Please see the </span></span><span style=\\"font-size: 12pt;\\"><span style=\\"font-family: times new roman,serif;\\"><a href=\\"http://sf-moh.org/index.aspx?page=295\\" target=\\"_blank\\"><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\"><span style=\\"color: rgb(0, 0, 255);\\">Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a></span></span><span style=\\"font-size: 10pt;\\"><span style=\\"font-family: arial,sans-serif;\\"> for more information. </span></span>",
                       }
                     }
                   />

@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 
 import _ from 'lodash'
-import modelsFactory from '../../factories/models'
+import { listing } from '../../fixtures/listing'
 import sharedHooks from '../../support/sharedHooks'
 
 import ListingPage from 'components/listings/ListingPage'
@@ -19,9 +19,8 @@ import {
 
 describe('ListingPage', () => {
   sharedHooks.useFakeTimers()
-  const listing = modelsFactory.listings[0]
 
-  test('should render succesfully', () => {
+  test('should render successfully', () => {
     const wrapper = renderer.create(
       <ListingPage listing={listing} />
     )

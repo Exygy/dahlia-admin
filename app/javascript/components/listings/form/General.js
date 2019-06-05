@@ -14,9 +14,6 @@ const ListingFormSectionsGeneral = ({ listing }) => {
       <FormGroup>
         <SimpleField fieldName='name' fieldLabel='Name' validation={Required} />
         <SimpleField fieldName='image_url' fieldLabel='Image URL' />
-        <SimpleField fieldName='marketing_url' fieldLabel='Marketing URL' />
-        <SimpleField fieldName='priorities_descriptor' fieldLabel='Priorities descriptor' />
-        <SimpleField fieldName='program_type' fieldLabel='Program type' />
       </FormGroup>
 
       <br />
@@ -30,7 +27,6 @@ const ListingFormSectionsGeneral = ({ listing }) => {
         <SimpleField fieldName='application_postal_code' fieldLabel='Zip Code' validation={MustBeNumberOrDashes} />
         <Field component={SimpleDatePicker} name='application_due_date' label='Due Date' />
         <br />
-        <SimpleField fieldName='general_application_total' fieldLabel='General application total' validation={MustBeNumberOrDashes} />
         <SimpleCheckbox fieldName='accepting_applications_by_po_box' fieldLabel='Accepting applications by PO box?' />
         <SimpleCheckbox fieldName='accepting_applications_at_leasing_agent' fieldLabel='Accepting applications at leasing agent?' />
         <SimpleCheckbox fieldName='blank_paper_application_can_be_picked_up' fieldLabel='Blank paper application can be picked up?' />

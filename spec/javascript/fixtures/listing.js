@@ -1,131 +1,60 @@
-const listing = {
-  "attributes": {
-    "type": "Listing",
-    "url": "\/services\/data\/v26.0\/sobjects\/Listing\/a0W0x000000GhJUEA0"
-  },
-  "Id": "a0W0x000000GhJUEA0",
-  "OwnerId": "0050P000007H5XsQAK",
-  "Owner": {
-    "attributes": {
-      "type": "Name",
-      "url": "\/services\/data\/v26.0\/sobjects\/User\/0050P000007H5XsQAK"
-    },
-    "Name": "Prod Vertiba"
-  },
-  "Application_Due_Date": "2018-05-31T20:59:00.000+0000",
-  "Name": "Test 5\/30",
-  "Status": "Active",
-  "Building": {
-    "attributes": {
-      "type": "Building",
-      "url": "\/services\/data\/v26.0\/sobjects\/Building\/a0aU00000098I4WIAU"
-    },
-    "Name": "PR-000001"
-  },
-  "Min_BR": null,
-  "Max_BR": null,
-  "Min_Income": 0,
-  "Account": {
-    "attributes": {
-      "type": "Account",
-      "url": "\/services\/data\/v26.0\/sobjects\/Account\/0010P00001pIXNcQAO"
-    },
-    "Name": "Equity Residential"
-  },
-  "Max_Income": null,
-  "Min_Occupancy": 1,
-  "Max_Occupancy": null,
-  "Building_Name": "77 Bluxome",
-  "Neighborhood": "South of Market",
-  "Building_Street_Address": "77 Bluxome Street",
-  "Developer": "Equity Residential",
-  "Building_City": "San Francisco",
-  "Building_URL": "https:\/\/i.imgur.com\/Jh8OHJY.jpg",
-  "Building_State": "CA",
-  "Year_Built": 2008,
-  "Building_Zip_Code": "94107",
-  "Description": null,
-  "Lottery_Preferences": null,
-  "Accessibility": null,
-  "Fee": null,
-  "Amenities": null,
-  "Deposit_Min": null,
-  "Costs_Not_Included": null,
-  "Deposit_Max": null,
-  "Reserved_community_type": null,
-  "Application_Phone": null,
-  "Application_Organization": null,
-  "Application_Street_Address": null,
-  "Application_City": null,
-  "Download_URL": null,
-  "Application_State": "CA",
-  "Application_Postal_Code": null,
-  "Leasing_Agent_Name": "Cullen McCaffrey",
-  "Leasing_Agent_Title": null,
-  "Leasing_Agent_Email": "77bluxome@eqr.com",
-  "Leasing_Agent_Phone": "(415) 957-5887",
-  "Legal_Disclaimers": null,
-  "Building_Selection_Criteria": null,
-  "Pet_Policy": null,
-  "Required_Documents": null,
-  "Smoking_Policy": null,
-  "Eviction_History": null,
-  "Criminal_History": null,
-  "Credit_Rating": null,
-  "Office_Hours": null,
-  "Information_Sessions": null,
-  "Open_Houses": null,
-  "Listing_Lottery_Preferences": [
-    {
-      "attributes": {
-        "type": "Listing_Lottery_Preference",
-        "url": "\/services\/data\/v26.0\/sobjects\/Listing_Lottery_Preference\/a0l0x000000RI8nAAG"
-      },
-      "Id": "a0l0x000000RI8nAAG",
-      "Total_Submitted_Apps": 0,
-      "Order": null,
-      "Description": "For households in which at least one member was a resident of the Alice Griffith housing development. This includes baseline and current residents that lived in the targeted redevelopment site on or after the time of application for Choice Neighborhoods of October 26, 2010.",
-      "Available_Units": null,
-      "PDF_URL": null,
-      "Lottery_Preference": {
-        "attributes": {
-          "type": "Lottery_Preference",
-          "url": "\/services\/data\/v26.0\/sobjects\/Lottery_Preference\/a0m0P00000yuzO0QAI"
-        },
-        "Id": "a0m0P00000yuzO0QAI",
-        "Name": "Alice Griffith Housing Development Resident"
-      }
-    },
-    {
-      "Available_Units":null,
-      "Description":"Households in which one member holds a Certificate of Preference from the former San Francisco Redevelopment Agency. COP holders were displaced by Agency action generally during the 1960s and 1970s.",
-      "Id":"a0l0P00001JEWXZQA5",
-      "Lottery_Preference":{
-        "Id": "a0m0P00000wwi3IQAQ",
-        "Name": "Certificate of Preference (COP)"
-      },
-      "Order":1,
-      "PDF_URL":null,
-      "Total_Submitted_Apps":7
-    }
-  ],
-  "Units": [
-    {
-      "attributes": {
-        "type": "Unit",
-        "url": "\/services\/data\/v26.0\/sobjects\/Unit\/a0b0x000000yyMBAAY"
-      },
-      "Unit_Type": "Studio",
-      "BMR_Rent_Monthly": null,
-      "BMR_Rental_Minimum_Monthly_Income_Needed": 0,
-      "Status": "Available",
-      "Property_Type": null,
-      "AMI_chart_type": "HUD Unadjusted",
-      "AMI_chart_year": 2017,
-      "of_AMI_for_Pricing_Unit": null,
-      "Reserved_Type": null
-    }
-  ]
+import { mapValues } from 'lodash'
+
+export const listing = {
+  accepting_applications_at_leasing_agent: false,
+  accepting_applications_by_po_box: true,
+  accepting_online_applications: false,
+  accessibility: 'Elevator to all floors',
+  amenities: 'Laundry room, underground parking, courtyard, bike room',
+  application_city: 'San Francisco',
+  application_download_url: 'https: //sfmohcd.org/sites/default/files/Documents/MOH/BMR%20Rental%20Paper%20Applications/English%20BMR%20Rent%20Short%20Form%20Paper%20App.pdf',
+  application_due_date: 'Thu, 31 Dec 2020 17:00:00 PST -08:00',
+  application_fee: 40.00,
+  application_organization: 'Automated Test Listing',
+  application_phone: '(415) 123-4567',
+  application_postal_code: '94142',
+  application_state: 'CA',
+  application_street_address: 'P.O. Box 123456',
+  blank_paper_application_can_be_picked_up: false,
+  building_city: 'San Francisco',
+  building_name: 'Automated Test Listing',
+  building_selection_criteria: 'https://us.awp.autotask.net/1/filelink/113bd-37ed41a1-53a7f01459-2',
+  building_state: 'CA',
+  building_street_address: '123 Main St',
+  building_zip_code: '94142',
+  costs_not_included: 'Tenants pay for gas, electricity.\r\n\r\nFor pet fees:  Cat is allowed with a $500 refundable deposit, $250 non-refundable cleaning fee and a pet addendum.  \r\n\r\nDogs are not allowed in the building.  \r\n\r\nOne parking space per unit available for $175 a month.',
+  credit_history: 'Provide a credit report with score from Equifax, Experian, or TransUnion dated within thirty (30) days of the application. \r\n\r\nAccounts that are not current or that are derogatory will negatively affect the overall scoring, which could result in the denial of the application or an additional deposit may be required. \r\n\r\nCollection accounts exceeding a combined amount of $1,000.00 (excluding student loans and medical debt) will negatively affect the overall scoring, which could result in the denial of the application or an additional deposit may be required. \r\n\r\nBankruptcy if not cleared will be an automatic denial of the rental application. \r\n\r\nNo Guarantors permitted.\r\n\r\nMitigating circumstances may be considered.',
+  criminal_background: 'Qualified applicants with criminal history will be considered for housing in compliance with Article 49 of the San Francisco Police Code: Fair Chance Ordinance.',
+  deposit_max: 0.2355e4,
+  deposit_min: 0.2102e4,
+  developer: 'Test Property Manager',
+  external_id: 'TestListing123',
+  id: 0,
+  image_url: 'https://s-media-cache-ak0.pinimg.com/736x/a4/b7/e1/a4b7e1cb9732fb672483fcd61c7f70b9.jpg',
+  leasing_agent_city: 'San Francisco',
+  leasing_agent_email: 'johndoe@testleasingagent.com',
+  leasing_agent_name: 'John Doe',
+  leasing_agent_office_hours: 'Monday - Friday, 9:00 am - 5:00 pm',
+  leasing_agent_phone: '(415) 123-4567',
+  leasing_agent_state: 'CA',
+  leasing_agent_street: '123 Main St',
+  leasing_agent_title: 'Leasing Agent',
+  leasing_agent_zip: '94142',
+  name: 'Automated Test Listing',
+  neighborhood: 'SOMA',
+  pet_policy: 'Dogs are not allowed in the building.',
+  priorities_descriptor: null,
+  program_rules: '<span style="font-size: 10pt;"><span style="font-family: arial,sans-serif;">All BMR renters must review and acknowledge the </span></span><a href="http://sf-moh.org/index.aspx?page=295" target="_blank"><span style="font-size: 10pt;"><span style="font-family: arial,sans-serif;"><span style="color: rgb(0, 0, 255);">Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style="font-size: 10pt;"><span style="font-family: arial,sans-serif;"> that governs this property upon the signing of a lease for a BMR unit. </span></span><br> <br><span style="font-size: 10pt;"><span style="font-family: arial,sans-serif;">Applicants should be informed that BMR rental units in some buildings may convert to ownership units in the future.  In the case of conversion, BMR renters will be afforded certain rights as explained in the </span></span><a href="http://sf-moh.org/index.aspx?page=295" target="_blank"><span style="font-size: 10pt;"><span style="font-family: arial,sans-serif;"><span style="color: rgb(0, 0, 255);">Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a><span style="font-size: 10pt;"><span style="font-family: arial,sans-serif;">. Applicants should inquire with the building contact person listed above to determine if the building has a minimum number of years that it must remain a rental building.  (Some buildings may have such restrictions based on government sources of financing for their building.) Most buildings may have no restrictions on conversion at all. </span></span><br> <br><span style="font-size: 10pt;"><span style="font-family: arial,sans-serif;">It is also important to note that units governed by the Inclusionary Housing Program are NOT governed by the San Francisco Rent Ordinance (also known as “rent control”). Among other rules, rents may increase beyond increases allowed under “rent control.”  Please see the </span></span><span style="font-size: 12pt;"><span style="font-family: times new roman,serif;"><a href="http://sf-moh.org/index.aspx?page=295" target="_blank"><span style="font-size: 10pt;"><span style="font-family: arial,sans-serif;"><span style="color: rgb(0, 0, 255);">Inclusionary Affordable Housing Program Monitoring and Procedures Manual 2013</span></span></span></a></span></span><span style="font-size: 10pt;"><span style="font-family: arial,sans-serif;"> for more information. </span></span>',
+  rental_history: 'Our credit reporting agency also reviews eviction and court databases to search for both eviction filings and judgements within the past 24 months. No Fault or Dismissed evictions will not be held against the household. If a household does not meet the rental or credit criteria, they will then have the option of either paying an additional deposit equal to 1 times the monthly rent, or providing a qualified guarantor. If the applicant does not provide either of these options, it could result in the denial of their application. Mitigating Circumstances will be considered on a case by case basis.',
+  required_documents: 'Lottery winners will be required to fill out a building application and provide a copy of your current credit report, 3 most recent paystubs, current tax returns and W-2, and 3 most recent bank statements.',
+  reserved_community_maximum_age: 0,
+  reserved_community_minimum_age: 0,
+  reserved_descriptor: null,
+  smoking_policy: 'Non-Smoking Building',
+  unit_amenities: null,
+  waitlist_current_size: 10,
+  waitlist_max_size: 300,
+  year_built: 2009
 }
 
-export default listing
+export const blankListing = mapValues(listing, (x) => null)
