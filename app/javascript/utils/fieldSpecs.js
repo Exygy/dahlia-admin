@@ -1,5 +1,5 @@
 import { each, replace, get, toLower, includes, isString, camelCase, startCase, map } from 'lodash'
-import moment from 'moment'
+import moment from 'moment-timezone'
 
 import { cleanField, DATE_FORMAT } from '~/utils/utils'
 
