@@ -3,6 +3,7 @@ import FormGroup from '../../atoms/FormGroup'
 import { Required, MustBeNumberOrDashes } from '~/utils/final-form/validations'
 import { SimpleField } from '~/utils/final-form/SimpleField'
 import { SimpleCheckbox } from '~/utils/final-form/SimpleCheckbox'
+import { SimpleTextArea } from '~/utils/final-form/SimpleTextArea'
 
 const ListingFormSectionsBuilding = ({ listing }) => {
   return (
@@ -15,10 +16,10 @@ const ListingFormSectionsBuilding = ({ listing }) => {
         <SimpleField fieldName='building_city' fieldLabel='City' validation={Required} />
         <SimpleField fieldName='building_state' fieldLabel='State' validation={Required} />
         <SimpleField fieldName='building_zip_code' fieldLabel='Zip Code' validation={MustBeNumberOrDashes} />
-        <SimpleField fieldName='building_url' fieldLabel='Building URL' />
         <SimpleField fieldName='neighborhood' fieldLabel='Neighborhood' />
         <SimpleField fieldName='year_built' fieldLabel='Year Built' validation={MustBeNumberOrDashes} />
         <SimpleField fieldName='developer' fieldLabel='Developer' validation={Required} />
+        <SimpleTextArea fieldName='building_selection_criteria' fieldLabel='Building Selection Criteria' />
       </FormGroup>
       <FormGroup>
         <SimpleField fieldName='accessibility' fieldLabel='Accessibility' />

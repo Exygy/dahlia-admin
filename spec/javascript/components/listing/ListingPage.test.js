@@ -1,9 +1,9 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+import moment from 'moment-timezone'
 
 import _ from 'lodash'
-import modelsFactory from '../../factories/models'
-import sharedHooks from '../../support/sharedHooks'
+import { listing } from '../../fixtures/listing'
 
 import ListingPage from 'components/listings/ListingPage'
 import ListingDetailsContentCard from 'components/listings/ListingDetailsContentCard'
@@ -18,10 +18,9 @@ import {
 } from 'components/listings/fields'
 
 describe('ListingPage', () => {
-  sharedHooks.useFakeTimers()
-  const listing = modelsFactory.listings[0]
+  test('should render successfully', () => {
+    moment.tz.setDefault('America/Los_Angeles')
 
-  test('should render succesfully', () => {
     const wrapper = renderer.create(
       <ListingPage listing={listing} />
     )

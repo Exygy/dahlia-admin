@@ -10,6 +10,7 @@ const ListingFormSectionsFees = ({ listing }) => {
       <h3>Fees</h3>
 
       <FormGroup>
+        <SimpleField fieldName='application_fee' fieldLabel='Application Fee' validation={MustBeNumberOrDashes} />
         <SimpleField fieldName='deposit_min' fieldLabel='Deposit Min' validation={MustBeNumberOrDashes} />
         <SimpleField fieldName='deposit_max' fieldLabel='Deposit Max' validation={MustBeNumberOrDashes} />
         <SimpleTextArea fieldName='costs_not_included' fieldLabel='Costs not included' />

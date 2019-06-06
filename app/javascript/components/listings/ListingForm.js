@@ -9,6 +9,7 @@ import PageHeader from '../organisms/PageHeader'
 import ListingFormSectionsBuilding from './form/Building'
 import ListingFormSectionsFees from './form/Fees'
 import ListingFormSectionsGeneral from './form/General'
+import ListingFormSectionsLeasingAgent from './form/LeasingAgent'
 import ListingFormSectionsPolicies from './form/Policies'
 import ListingFormSectionsRequirements from './form/Requirements'
 import ListingFormSectionsSenior from './form/Senior'
@@ -46,15 +47,19 @@ const ListingForm = ({ listing }) => {
             <div className={rowClass}>
               <div className={columnClass}>
                 <ListingFormSectionsGeneral listing={listing} />
+                <br />
+                <ListingFormSectionsWaitlist listing={listing} />
               </div>
               <div className={columnClass}>
                 <ListingFormSectionsBuilding listing={listing} />
               </div>
             </div>
+
             <div style={{height: '25px'}} />
+
             <div className={rowClass}>
               <div className={columnClass}>
-                <ListingFormSectionsWaitlist listing={listing} />
+                <ListingFormSectionsLeasingAgent listing={listing} />
               </div>
               <div className={columnClass}>
                 <ListingFormSectionsSenior listing={listing} />
@@ -62,7 +67,9 @@ const ListingForm = ({ listing }) => {
                 <ListingFormSectionsFees listing={listing} />
               </div>
             </div>
+
             <div style={{height: '25px'}} />
+
             <div className={rowClass}>
               <div className={columnClass}>
                 <ListingFormSectionsRequirements listing={listing} />
@@ -71,7 +78,9 @@ const ListingForm = ({ listing }) => {
                 <ListingFormSectionsPolicies listing={listing} />
               </div>
             </div>
+
             <div style={{height: '25px'}} />
+
             <div className={rowClass}>
               <div className={columnClass}>
                 <button type='submit' disabled={submitting}>

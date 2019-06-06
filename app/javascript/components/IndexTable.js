@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { each, includes, last, uniqBy, map, sortBy } from 'lodash'
 import ReactTable from 'react-table'
-import utils from '~/utils/utils'
+import { cleanField } from '~/utils/utils'
 import IndexTableCell from './IndexTableCell'
 
 class IndexTable extends React.Component {
@@ -42,9 +42,9 @@ class IndexTable extends React.Component {
       if (attrs.label) {
         column.Header = attrs.label
       } else if (includes(field, '.')) {
-        column.Header = utils.cleanField(last(field.split('.')))
+        column.Header = cleanField(last(field.split('.')))
       } else {
-        column.Header = utils.cleanField(field)
+        column.Header = cleanField(field)
       }
       // for Listings Tab
       if (column.Header === 'Name') {
