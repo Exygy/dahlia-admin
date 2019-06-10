@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_05_234515) do
+ActiveRecord::Schema.define(version: 2019_06_10_152131) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "ami_charts", force: :cascade do |t|
     t.string "ami_values_file"
-    t.integer "chart_type"
+    t.string "chart_type"
     t.integer "year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -166,8 +166,11 @@ ActiveRecord::Schema.define(version: 2019_06_05_234515) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.integer "role"
+    t.bigint "group_id"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["group_id"], name: "index_users_on_group_id"
     t.index ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true
   end
 
+  add_foreign_key "users", "groups"
 end
