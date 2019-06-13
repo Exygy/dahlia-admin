@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer'
 import { HEADLESS, TEST_HOST } from '../support/puppeteer/consts'
 import { loginAsAgent, goto, enterValue, checkForListing } from '../support/puppeteer/steps/sharedSteps'
-import { LISTING_FORM_REQUIRED_FIELDS } from '../utils'
+import { LISTING_FORM_REQUIRED_FIELDS } from '../components/listing/utils'
 
 describe('Listings', () => {
   test('New Listing', async () => {
@@ -53,7 +53,7 @@ describe('Listings', () => {
     await page.type('#form-developer', 'Developer')
 
     const nameInput = await page.$eval('#form-name', e => e.value)
-    expect(nameInput).toBe(LISTING_FORM_REQUIRED_FIELDS[0].value)
+    expect(nameInput).toBe(LISTING_FORM_REQUIRED_FIELDS[5].value)
 
     await page.click('button[type=submit]')
     await page.waitFor(1000)

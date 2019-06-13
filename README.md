@@ -11,8 +11,8 @@ Cross-browser testing done with <a href="https://www.browserstack.com/"><img src
 
 ## Setup
 * Use Ruby 2.5.3 (Set the version using [RVM](https://rvm.io/rvm/install) or [rbenv](https://github.com/rbenv/rbenv))
-* Install [Bundler](https://github.com/bundler/bundler) for this version of Ruby `gem install bundler -v 1.17.1`
-* Use Node v8.10.x (npm v5.5.x)
+* Install [Bundler](https://github.com/bundler/bundler) for this version of Ruby `gem install bundler -v 2.0.1`
+* Use Node v12.1.x (npm v6.9.x) — If you need to manage multiple Node versions on your dev machine, install NVM and run `nvm use`
 * Install Yarn (if you have Homebrew you can run `brew install yarn`)
 * Run `yarn install`
 * Run `bundle install`
@@ -20,10 +20,10 @@ Cross-browser testing done with <a href="https://www.browserstack.com/"><img src
 * Run `overcommit --install`
 * Create a `.env` file in the root directory and ask a team member for access to the local development secrets
 * Setup your local database by running `bin/rails db:migrate RAILS_ENV=development`
+* Run `gem install foreman`
 
 ## To run server
-* `bin/webpack-dev-server --hot`
-* `rails s`
+* Run `foreman start -f Procfile.development`
 * Access the app at [http://localhost:3000/](http://localhost:3000/)
 
 ## To update CSS from Pattern Library
@@ -60,17 +60,9 @@ _Note: Snapshots should be pushed to the repo_
 
 To view the e2e tests as they're running, set `HEADLESS` to `false` in [this file](https://github.com/Exygy/sf-dahlia-lap/blob/master/spec/javascript/support/puppeteer/consts.js)
 
-**Run server**
-
-Run your Rails server locally in port 3000:
-
-`bundle exec rails server -p 3000`
-
-Run your webpack server locally
-
-`bin/webpack-dev-server --hot`
-
 **Run tests**
+
+`yarn rails-server-test`
 
 `yarn test:e2e`
 
