@@ -81,7 +81,7 @@
     "rails-teardown-test": "kill $(cat tmp/pids/server_test.pid)",
     "start": "npm-run-all -p -l webpack-hot rails-server",
     "test:all": "jest",
-    "test:e2e": "jest --testPathPattern=.*e2e.* --runInBand. --forceExit; yarn rails-teardown-test",
+    "test:e2e": "jest --testPathPattern=.*e2e.* --runInBand. --forceExit",
     "test:unit": "jest --testPathPattern=.*.test.js$ --coverage",
     "webpack-hot": "bin/webpack-dev-server --hot"
   },
