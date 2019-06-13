@@ -421,6 +421,18 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
             CA
           </p>
         </div>
+        <div
+          className="margin-bottom--half"
+        >
+          <h4
+            className="t-sans t-small t-bold no-margin"
+          >
+            Building Zip Code
+          </h4>
+          <p>
+            94142
+          </p>
+        </div>
       </div>
     </li>
     <li
@@ -435,10 +447,10 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
           <h4
             className="t-sans t-small t-bold no-margin"
           >
-            Building Zip Code
+            Neighborhood
           </h4>
           <p>
-            94142
+            SOMA
           </p>
         </div>
         <div
@@ -447,10 +459,10 @@ exports[`ListingPage individual fields Building Information fields 1`] = `
           <h4
             className="t-sans t-small t-bold no-margin"
           >
-            Neighborhood
+            Building Total Units
           </h4>
           <p>
-            SOMA
+            20
           </p>
         </div>
         <div
@@ -784,6 +796,18 @@ Array [
                     CA
                   </p>
                 </div>
+                <div
+                  className="margin-bottom--half"
+                >
+                  <h4
+                    className="t-sans t-small t-bold no-margin"
+                  >
+                    Building Zip Code
+                  </h4>
+                  <p>
+                    94142
+                  </p>
+                </div>
               </div>
             </li>
             <li
@@ -798,10 +822,10 @@ Array [
                   <h4
                     className="t-sans t-small t-bold no-margin"
                   >
-                    Building Zip Code
+                    Neighborhood
                   </h4>
                   <p>
-                    94142
+                    SOMA
                   </p>
                 </div>
                 <div
@@ -810,10 +834,10 @@ Array [
                   <h4
                     className="t-sans t-small t-bold no-margin"
                   >
-                    Neighborhood
+                    Building Total Units
                   </h4>
                   <p>
-                    SOMA
+                    20
                   </p>
                 </div>
                 <div

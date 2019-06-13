@@ -17,6 +17,7 @@ const ListingFormSectionsBuilding = ({ listing }) => {
         <SimpleField fieldName='building_state' fieldLabel='State' validation={Required} />
         <SimpleField fieldName='building_zip_code' fieldLabel='Zip Code' validation={MustBeNumberOrDashes} />
         <SimpleField fieldName='neighborhood' fieldLabel='Neighborhood' />
+        <SimpleField fieldName='building_total_units' fieldLabel='Total Units' validation={MustBeNumberOrDashes} />
         <SimpleField fieldName='year_built' fieldLabel='Year Built' validation={MustBeNumberOrDashes} />
         <SimpleField fieldName='developer' fieldLabel='Developer' validation={Required} />
         <SimpleTextArea fieldName='building_selection_criteria' fieldLabel='Building Selection Criteria' />
