@@ -13,6 +13,7 @@ export const LISTING_FORM_REQUIRED_FIELDS = [
 
 export const LISTING_FORM_NUMBERS_DASHES_FIELDS = [
   { name: 'application_postal_code', value: '11111' },
+  { name: 'building_total_units', value: '20' },
   { name: 'building_zip_code', value: '11111' },
   { name: 'deposit_max', value: '3000' },
   { name: 'deposit_min', value: '100' },
