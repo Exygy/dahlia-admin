@@ -10,6 +10,7 @@ export const buildingInformationFields = [
   'building_state',
   'building_zip_code',
   'neighborhood',
+  'building_total_units',
   'developer',
   'year_built',
   'description'
@@ -42,11 +43,10 @@ export const appInfoFields = [
 ]
 
 export const agentDevInfoFields = [
-  'Leasing_Agent_Name',
-  'Leasing_Agent_Title',
-  'Leasing_Agent_Email',
-  'Leasing_Agent_Phone',
-  'Preference_Detail'
+  'leasing_agent_name',
+  'leasing_agent_title',
+  'leasing_agent_email',
+  'leasing_agent_phone'
 ]
 
 export const eligibilityRulesFields = [
