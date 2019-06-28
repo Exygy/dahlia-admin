@@ -1,4 +1,5 @@
 /* global mount */
+/* global wait */
 import React from 'react'
 
 import { blankListing, listing } from '../../fixtures/listing'
@@ -10,6 +11,17 @@ import {
   testNumbersOrDashes,
   testRequired
 } from './utils'
+
+const mockSubmitListing = jest.fn()
+
+jest.mock('apiService', () => {
+  return {
+    updateListing: async (data) => {
+      mockSubmitListing(data)
+      return true
+    }
+  }
+})
 
 describe('ListingForm', () => {
   describe('should validate fields correctly: ', () => {
@@ -36,5 +48,19 @@ describe('ListingForm', () => {
     )
 
     expect(wrapper.find('h1.lead-header_title').text()).toEqual('Edit Listing')
+  })
+
+  test('it should pass the cleared field to submit', async () => {
+    listing.application_fee = ''
+    const wrapper = mount(
+      <ListingForm listing={listing} />
+    )
+    wrapper.find('#form-application_fee').simulate('change', {target: {value: ''}})
+    wrapper.find('form').first().simulate('submit')
+
+    await wait(100)
+
+    expect(mockSubmitListing.mock.calls.length).toBe(1)
+    expect(mockSubmitListing.mock.calls[0][0].application_fee).toBeDefined()
   })
 })
