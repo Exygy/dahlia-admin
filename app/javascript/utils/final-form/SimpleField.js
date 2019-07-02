@@ -1,8 +1,11 @@
 import React from 'react'
 import { Field } from 'react-final-form'
 
+// By default empty values are not set. This allows resetting values.
+const identity = value => (value)
+
 export const SimpleField = ({ fieldName, fieldLabel, validation, placeholder }) => (
-  <Field name={fieldName} validate={validation}>
+  <Field name={fieldName} validate={validation} parse={identity}>
     {({ input, meta }) => (
       <React.Fragment>
         <label htmlFor={`form-${fieldName}`}>{fieldLabel}:</label>
