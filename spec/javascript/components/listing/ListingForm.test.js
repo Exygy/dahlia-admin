@@ -51,7 +51,7 @@ describe('ListingForm', () => {
   })
 
   test('it should pass the cleared field to submit', async () => {
-    listing.application_fee = ''
+    listing.application_fee = 123
     const wrapper = mount(
       <ListingForm listing={listing} />
     )
