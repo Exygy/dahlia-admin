@@ -1,29 +1,22 @@
-# DAHLIA Partners
+# DAHLIA Admin
 
-A portal for leasing agents, sales agents, and developers to manage listings and applications.
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/9e8566f1a7a92c4eca3e/maintainability)](https://codeclimate.com/github/Exygy/sf-dahlia-lap/maintainability)
-
-Only showing rspec tests for now:
-[![Test Coverage](https://api.codeclimate.com/v1/badges/9e8566f1a7a92c4eca3e/test_coverage)](https://codeclimate.com/github/Exygy/sf-dahlia-lap/test_coverage)
-
-Cross-browser testing done with <a href="https://www.browserstack.com/"><img src="./Browserstack-logo@2x.png?raw=true" height="36" ></a>
+A portal for leasing agents, sales agents, and developers to manage listings.
 
 ## Setup
 * Use Ruby 2.5.3 (Set the version using [RVM](https://rvm.io/rvm/install) or [rbenv](https://github.com/rbenv/rbenv))
-* Install [Bundler](https://github.com/bundler/bundler) for this version of Ruby `gem install bundler -v 1.17.1`
-* Use Node v8.10.x (npm v5.5.x)
+* Install [Bundler](https://github.com/bundler/bundler) for this version of Ruby `gem install bundler -v 2.0.2`
+* Use Node v12.1.x (npm v6.9.x) — If you need to manage multiple Node versions on your dev machine, install NVM and run `nvm use`
 * Install Yarn (if you have Homebrew you can run `brew install yarn`)
 * Run `yarn install`
 * Run `bundle install`
   - see [here](https://stackoverflow.com/a/19850273/260495) if you have issues installing `pg` gem with Postgres.app, you may need to use: `gem install pg -v 0.21.0 -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/latest/bin/pg_config`
+* Run `rails g dahlia_data_models:install` to generate database migrations
+* Setup your local database by running `rails db:create && rails db:migrate`
 * Run `overcommit --install`
-* Create a `.env` file in the root directory and ask a team member for access to the local development secrets
-* Setup your local database by running `bin/rails db:migrate RAILS_ENV=development`
+* Run `gem install foreman`
 
 ## To run server
-* `bin/webpack-dev-server --hot`
-* `rails s`
+* Run `foreman start -f Procfile.development`
 * Access the app at [http://localhost:3000/](http://localhost:3000/)
 
 ## To update CSS from Pattern Library
@@ -60,19 +53,13 @@ _Note: Snapshots should be pushed to the repo_
 
 To view the e2e tests as they're running, set `HEADLESS` to `false` in [this file](https://github.com/Exygy/sf-dahlia-lap/blob/master/spec/javascript/support/puppeteer/consts.js)
 
-**Run server**
-
-Run your Rails server locally in port 3000:
-
-`bundle exec rails server -p 3000`
-
-Run your webpack server locally
-
-`bin/webpack-dev-server --hot`
-
 **Run tests**
 
-`yarn test:e2e`
+`yarn rails-server-test` to start the test server.
+
+`yarn test:e2e` to run the e2e tests.
+
+`yarn rails-teardown-test` to stop the test server.
 
 
 ### Running all or individual tests
