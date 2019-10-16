@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_13_182146) do
+ActiveRecord::Schema.define(version: 2019_10_16_222651) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -103,6 +103,8 @@ ActiveRecord::Schema.define(version: 2019_06_13_182146) do
     t.string "leasing_agent_zip"
     t.text "rental_history"
     t.integer "building_total_units"
+    t.boolean "accepts_postmark", default: false
+    t.date "postmark_due_date"
     t.index ["group_id"], name: "index_listings_on_group_id"
   end
 
