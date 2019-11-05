@@ -99,4 +99,4 @@ gem "pg", "~> 0.21.0"
 gem "pundit"
 
 # Added at 2019-04-23 11:05:00 -0700 by jwhite:
-gem "dahlia_data_models", git: 'https://github.com/Exygy/dahlia_data_models.git', ref: '9a381f3c182a68ede86014e51086e78cbb717968'
+gem "dahlia_data_models", git: 'https://github.com/Exygy/dahlia_data_models.git', ref: '5483c5802ab748e673595ff8e955532a6fb535a0'

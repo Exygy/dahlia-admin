@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_16_222651) do
+ActiveRecord::Schema.define(version: 2019_11_01_203938) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(version: 2019_10_16_222651) do
     t.integer "group_id"
     t.index ["chart_type", "year", "group_id"], name: "index_ami_charts_on_chart_type_and_year_and_group_id", unique: true
     t.index ["group_id"], name: "index_ami_charts_on_group_id"
+  end
+
+  create_table "application_download_urls", force: :cascade do |t|
+    t.integer "listing_id"
+    t.string "label"
+    t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "groups", force: :cascade do |t|
